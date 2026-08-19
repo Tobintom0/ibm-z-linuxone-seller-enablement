@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBM Z &amp; LinuxONE — Seller Enablement Study</title>
+
+<!-- ── Favicons — same set as ibm.com ── -->
+<link rel="icon" sizes="16x16"   href="https://www.ibm.com/content/dam/adobe-cms/default-images/icon-16x16.png">
+<link rel="icon" sizes="32x32"   href="https://www.ibm.com/content/dam/adobe-cms/default-images/icon-32x32.png">
+<link rel="icon" sizes="150x150" href="https://www.ibm.com/content/dam/adobe-cms/default-images/icon-150x150.png">
+<link rel="icon" sizes="192x192" href="https://www.ibm.com/content/dam/adobe-cms/default-images/icon-192x192.png">
+<link rel="icon" sizes="512x512" href="https://www.ibm.com/content/dam/adobe-cms/default-images/icon-512x512.png">
+<link rel="apple-touch-icon" sizes="57x57"   href="https://www.ibm.com/content/dam/adobe-cms/default-images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="76x76"   href="https://www.ibm.com/content/dam/adobe-cms/default-images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.ibm.com/content/dam/adobe-cms/default-images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.ibm.com/content/dam/adobe-cms/default-images/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.ibm.com/content/dam/adobe-cms/default-images/apple-touch-icon-180x180.png">
+
+<!-- ── Primary SEO meta ── -->
+<meta name="description" content="Full seller enablement study for IBM Z &amp; LinuxONE — in-depth GTM strategy, competitive analysis, customer personas, objection handling, and sales readiness content for IBM field sellers.">
+<meta name="author" content="IBM Z &amp; LinuxONE">
+<meta name="robots" content="index, follow">
+
+<!-- ── Open Graph (LinkedIn, Slack, iMessage, etc.) ── -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="IBM Z &amp; LinuxONE — Seller Enablement Study">
+<meta property="og:description" content="Full seller enablement study for IBM Z &amp; LinuxONE — in-depth GTM strategy, competitive analysis, customer personas, objection handling, and sales readiness content for IBM field sellers.">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
+<meta property="og:image:alt" content="IBM logo">
+<meta property="og:locale" content="en_US">
+
+<!-- ── Twitter / X Card ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBM Z &amp; LinuxONE — Seller Enablement Study">
+<meta name="twitter:description" content="Full seller enablement study for IBM Z &amp; LinuxONE — in-depth GTM strategy, competitive analysis, customer personas, objection handling, and sales readiness content for IBM field sellers.">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
+<style>
+  /* ── IBM DESIGN TOKENS ── */
+  :root {
+    --ibm-blue:        #0f62fe;
+    --ibm-blue-dark:   #0043ce;
+    --ibm-blue-light:  #d0e2ff;
+    --ibm-cyan:        #1192e8;
+    --ibm-teal:        #009d9a;
+    --ibm-purple:      #8a3ffc;
+    --ibm-red:         #da1e28;
+    --ibm-orange:      #ff832b;
+    --ibm-green:       #24a148;
+    --ibm-yellow:      #f1c21b;
+  }
+
+  /* ── DARK THEME (default) ── */
+  [data-theme="dark"] {
+    --bg:              #0a0a0a;
+    --slide-bg:        #161616;
+    --surface:         #262626;
+    --surface-alt:     #1c1c1c;
+    --border:          #393939;
+    --border-subtle:   #262626;
+    --text-primary:    #f4f4f4;
+    --text-secondary:  #c6c6c6;
+    --text-muted:      #a8a8a8;
+    --text-disabled:   #6f6f6f;
+    --text-on-color:   #ffffff;
+    --eyebrow-color:   #78a9ff;
+    --blue-tint-bg:    rgba(15,98,254,0.12);
+    --blue-tint-border:rgba(15,98,254,0.28);
+    --red-tint-bg:     rgba(218,30,40,0.14);
+    --red-tint-border: rgba(218,30,40,0.35);
+    --orange-tint-bg:  rgba(255,131,43,0.1);
+    --orange-tint-border:rgba(255,131,43,0.28);
+    --green-tint-bg:   rgba(36,161,72,0.14);
+    --purple-tint-bg:  rgba(138,63,252,0.14);
+    --purple-tint-border:rgba(138,63,252,0.32);
+    --ctrl-bg:         #262626;
+    --ctrl-border:     #525252;
+    --ctrl-hover:      #393939;
+    --dot-inactive:    #525252;
+    --shadow:          rgba(0,0,0,0.4);
+  }
+
+  /* ── LIGHT THEME ── */
+  [data-theme="light"] {
+    --bg:              #e8e8e8;
+    --slide-bg:        #ffffff;
+    --surface:         #f4f4f4;
+    --surface-alt:     #e0e0e0;
+    --border:          #c6c6c6;
+    --border-subtle:   #e0e0e0;
+    --text-primary:    #161616;
+    --text-secondary:  #393939;
+    --text-muted:      #525252;
+    --text-disabled:   #8d8d8d;
+    --text-on-color:   #ffffff;
+    --eyebrow-color:   #0043ce;
+    --blue-tint-bg:    rgba(15,98,254,0.08);
+    --blue-tint-border:rgba(15,98,254,0.25);
+    --red-tint-bg:     rgba(218,30,40,0.07);
+    --red-tint-border: rgba(218,30,40,0.28);
+    --orange-tint-bg:  rgba(255,131,43,0.07);
+    --orange-tint-border:rgba(255,131,43,0.25);
+    --green-tint-bg:   rgba(36,161,72,0.07);
+    --purple-tint-bg:  rgba(138,63,252,0.07);
+    --purple-tint-border:rgba(138,63,252,0.25);
+    --ctrl-bg:         #f4f4f4;
+    --ctrl-border:     #c6c6c6;
+    --ctrl-hover:      #e0e0e0;
+    --dot-inactive:    #a8a8a8;
+    --shadow:          rgba(0,0,0,0.12);
+  }
+
+  /* ── RESET ── */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  /* ── STAGE ── */
+  #stage {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: var(--slide-bg);
+  }
+
+  /* ── SLIDES ── */
+  .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+    overflow: hidden;
+  }
+  .slide.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ── SLIDE ENTRANCE ANIMATIONS ── */
+  .slide.active .anim-up {
+    animation: slideUp 0.55s cubic-bezier(0.22,1,0.36,1) both;
+  }
+  .slide.active .anim-fade {
+    animation: fadeIn 0.6s ease both;
+  }
+  .slide.active .anim-up:nth-child(2) { animation-delay: 0.08s; }
+  .slide.active .anim-up:nth-child(3) { animation-delay: 0.16s; }
+  .slide.active .anim-up:nth-child(4) { animation-delay: 0.24s; }
+  .slide.active .anim-up:nth-child(5) { animation-delay: 0.32s; }
+  .slide.active .anim-up:nth-child(6) { animation-delay: 0.40s; }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* ── OVERLAY CONTROLS ── */
+  .ctrl-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: inherit;
+    border-radius: 50%;
+    transition: background 0.2s, opacity 0.2s, transform 0.2s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0;
+    line-height: 1;
+  }
+  .ctrl-btn:hover { background: rgba(0,0,0,0.65); transform: translateY(-50%) scale(1.08); }
+  .ctrl-btn:disabled { opacity: 0.2; cursor: default; transform: translateY(-50%); }
+  #prev-btn { left: 18px; }
+  #next-btn { right: 18px; }
+
+  [data-theme="light"] .ctrl-btn {
+    background: rgba(255,255,255,0.6);
+    border-color: rgba(0,0,0,0.18);
+    color: #161616;
+  }
+  [data-theme="light"] .ctrl-btn:hover { background: rgba(255,255,255,0.9); }
+
+  /* Slide counter + theme toggle */
+  #hud-top {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  #slide-counter {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+  [data-theme="light"] #slide-counter { color: rgba(0,0,0,0.55); text-shadow: none; }
+
+  #theme-toggle {
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.85);
+    padding: 5px 14px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+    border-radius: 3px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  #theme-toggle:hover { background: rgba(0,0,0,0.6); }
+  [data-theme="light"] #theme-toggle {
+    background: rgba(255,255,255,0.6);
+    border-color: rgba(0,0,0,0.18);
+    color: rgba(0,0,0,0.7);
+  }
+  [data-theme="light"] #theme-toggle:hover { background: rgba(255,255,255,0.9); }
+
+  /* Progress dots */
+  #chrome-bottom {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 7px 16px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 22px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  [data-theme="light"] #chrome-bottom {
+    background: rgba(255,255,255,0.55);
+    border-color: rgba(0,0,0,0.1);
+  }
+  .prog-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    flex-shrink: 0;
+  }
+  [data-theme="light"] .prog-dot { background: rgba(0,0,0,0.25); }
+  .prog-dot.active { background: var(--ibm-blue); transform: scale(1.6); }
+  .prog-dot:hover { background: rgba(255,255,255,0.7); }
+  [data-theme="light"] .prog-dot:hover { background: rgba(0,0,0,0.5); }
+
+  /* ── COMMON SLIDE ELEMENTS ── */
+  .slide-grid { display: grid; height: 100%; }
+
+  .ibm-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-left: 3px solid var(--ibm-blue);
+    background: var(--blue-tint-bg);
+    color: var(--ibm-blue-light);
+  }
+  [data-theme="light"] .ibm-tag { color: #0043ce; }
+  .ibm-tag.red    { border-color: var(--ibm-red);    background: var(--red-tint-bg);    color: #a2191f; }
+  .ibm-tag.orange { border-color: var(--ibm-orange); background: var(--orange-tint-bg); color: #8a3800; }
+  .ibm-tag.green  { border-color: var(--ibm-green);  background: var(--green-tint-bg);  color: #0e6027; }
+  .ibm-tag.purple { border-color: var(--ibm-purple); background: var(--purple-tint-bg); color: #6929c4; }
+  [data-theme="dark"] .ibm-tag.red    { color: #ffd7d9; }
+  [data-theme="dark"] .ibm-tag.orange { color: #ffb784; }
+  [data-theme="dark"] .ibm-tag.green  { color: #a7f0ba; }
+  [data-theme="dark"] .ibm-tag.purple { color: #e8daff; }
+
+  .stat-num {
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--ibm-blue);
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-size: 14px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--eyebrow-color);
+    margin-bottom: 14px;
+  }
+  .eyebrow.dim { color: var(--text-muted); }
+
+  .rule { width: 52px; height: 3px; background: var(--ibm-blue); margin-bottom: 22px; }
+
+  /* ── SLIDE 1: COVER ── */
+  #s1 {
+    display: grid;
+    grid-template-columns: 48% 1fr;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Left panel — deep IBM blue */
+  #s1 .s1-left {
+    background: #0043ce;
+    padding: clamp(36px,7vh,80px) clamp(32px,5vw,72px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Subtle mesh pattern on left */
+  #s1 .s1-left::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+  #s1 .s1-left::after {
+    content: '';
+    position: absolute;
+    bottom: -120px; right: -120px;
+    width: 420px; height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(15,98,254,0.55) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Wordmark / brand strip */
+  #s1 .s1-brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; z-index: 1;
+  }
+  #s1 .s1-brand::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 2px;
+    background: rgba(255,255,255,0.4);
+  }
+
+  /* Main heading */
+  #s1 .s1-headline {
+    position: relative; z-index: 1;
+  }
+  #s1 .s1-headline h1 {
+    font-size: clamp(30px, 5vw, 68px);
+    font-weight: 200;
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 0;
+  }
+  #s1 .s1-headline h1 em {
+    font-style: normal;
+    font-weight: 600;
+    color: #a6c8ff;
+  }
+  #s1 .s1-rule {
+    width: 44px; height: 3px;
+    background: #78a9ff;
+    margin: clamp(18px,3.5vh,36px) 0 clamp(14px,2.5vh,26px);
+  }
+  #s1 .s1-lede {
+    font-size: clamp(14px, 1.25vw, 17px);
+    line-height: 1.65;
+    color: rgba(255,255,255,0.72);
+    font-weight: 300;
+    max-width: 42ch;
+  }
+  #s1 .s1-lede b { color: #ffffff; font-weight: 500; }
+
+  /* Callout quote at bottom of left panel */
+  #s1 .s1-callout {
+    position: relative; z-index: 1;
+    margin-top: clamp(24px,4vh,48px);
+    padding: clamp(14px,2.5vh,22px) clamp(16px,2vw,24px);
+    background: rgba(255,255,255,0.08);
+    border-left: 3px solid #78a9ff;
+  }
+  #s1 .s1-callout p {
+    font-size: clamp(14px, 1.3vw, 17px);
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255,255,255,0.88);
+    margin: 0;
+  }
+
+  /* Bottom meta row */
+  #s1 .s1-meta {
+    position: relative; z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: clamp(20px,3.5vh,36px);
+    border-top: 1px solid rgba(255,255,255,0.18);
+  }
+  #s1 .s1-meta-item {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  #s1 .s1-meta-divider {
+    width: 1px; height: 14px;
+    background: rgba(255,255,255,0.2);
+  }
+
+  /* Right panel */
+  #s1 .s1-right {
+    background: var(--slide-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(36px,7vh,80px) clamp(32px,5vw,72px);
+    position: relative;
+    overflow: hidden;
+  }
+  #s1 .s1-right::before {
+    content: 'Z';
+    position: absolute;
+    bottom: -40px; right: -30px;
+    font-size: clamp(220px, 28vw, 380px);
+    font-weight: 700;
+    color: var(--border-subtle);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    pointer-events: none;
+    opacity: 0.55;
+    z-index: 0;
+  }
+  [data-theme="dark"] #s1 .s1-right::before { opacity: 0.2; color: #262626; }
+
+  #s1 .s1-stats-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--eyebrow-color);
+    margin-bottom: clamp(18px,3vh,32px);
+    position: relative; z-index: 1;
+  }
+
+  #s1 .s1-figs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative; z-index: 1;
+  }
+  #s1 .s1-fig {
+    padding: clamp(16px,2.5vh,26px) 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: clamp(16px,2vw,28px);
+    cursor: default;
+    transition: background 0.2s;
+  }
+  #s1 .s1-fig:first-child { border-top: 1px solid var(--border); }
+  #s1 .s1-fig b {
+    font-size: clamp(42px,5.2vw,72px);
+    line-height: 1;
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    color: var(--ibm-blue);
+    transition: color 0.25s;
+    min-width: clamp(80px,9vw,120px);
+    text-align: right;
+  }
+  #s1 .s1-fig:hover b { color: var(--text-primary); }
+  #s1 .s1-fig .fig-text {}
+  #s1 .s1-fig span {
+    display: block;
+    font-size: clamp(13px,1.2vw,16px);
+    color: var(--text-primary);
+    font-weight: 400;
+    line-height: 1.35;
+  }
+  #s1 .s1-fig .fig-sub {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.28px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  /* ── SLIDE 2: AGENDA ── */
+  #s2 { background: var(--slide-bg); display: grid; grid-template-columns: 30% 1fr; height: 100%; }
+  #s2 .left-panel {
+    background: var(--surface);
+    padding: 5% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--border);
+  }
+  #s2 .right-panel { padding: 5% 5%; display: flex; flex-direction: column; justify-content: center; }
+  .agenda-item {
+    display: flex; align-items: flex-start; gap: 22px;
+    padding: 17px 0; border-bottom: 1px solid var(--border-subtle); cursor: pointer;
+    transition: background 0.15s;
+  }
+  .agenda-item:last-child { border-bottom: none; }
+  .agenda-num { font-size: 13px; font-weight: 700; color: var(--ibm-blue); letter-spacing: 0.08em; min-width: 32px; margin-top: 2px; }
+  .agenda-title { font-size: clamp(15px, 1.4vw, 19px); font-weight: 400; color: var(--text-primary); line-height: 1.4; }
+  .agenda-sub { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+  /* ── SLIDE 3: THE PROBLEM ── */
+  #s3 { background: var(--slide-bg); display: grid; grid-template-columns: 1fr 1fr; height: 100%; }
+  #s3 .left { padding: 6%; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--border); }
+  #s3 .right { padding: 6%; display: flex; flex-direction: column; justify-content: center; }
+  #s3 .big-quote {
+    font-size: clamp(15px, 1.7vw, 21px); font-weight: 300; line-height: 1.65;
+    color: var(--text-primary); border-left: 3px solid var(--ibm-blue); padding-left: 24px; margin: 26px 0;
+  }
+  #s3 .problem-stat { font-size: clamp(52px, 6.5vw, 84px); font-weight: 200; color: var(--ibm-red); line-height: 1; letter-spacing: -0.03em; }
+
+  /* ── SLIDE 4: STUDY SCOPE ── */
+  #s4 {
+    background: var(--slide-bg);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Left stats column */
+  #s4 .s4-left {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: clamp(28px,5vh,56px) clamp(22px,2.5vw,36px);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+  }
+  #s4 .s4-left .s4-heading {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--eyebrow-color);
+    margin-bottom: clamp(18px,3vh,30px);
+  }
+  #s4 .s4-left .s4-sub {
+    font-size: clamp(13px,1.15vw,15px);
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-bottom: clamp(22px,4vh,36px);
+    padding-bottom: clamp(22px,4vh,36px);
+    border-bottom: 1px solid var(--border);
+  }
+  #s4 .stat-cell {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(14px,2.2vh,22px) 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  #s4 .stat-cell:last-child { border-bottom: none; }
+  #s4 .stat-cell .n {
+    font-size: clamp(40px,4.8vw,60px);
+    font-weight: 200;
+    color: var(--ibm-blue);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  #s4 .stat-cell .l {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 6px;
+  }
+
+  /* Right participants area */
+  #s4 .s4-right {
+    padding: clamp(28px,5vh,52px) clamp(24px,3vw,48px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #s4 .s4-right-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: clamp(14px,2.5vh,24px);
+    flex-shrink: 0;
+  }
+  #s4 .s4-right-header .s4-heading {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--eyebrow-color);
+  }
+
+  /* Region legend */
+  #s4 .s4-legend {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  #s4 .s4-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+  #s4 .s4-legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Participant grid — 4 columns */
+  #s4 .participants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(6px,0.8vw,10px);
+    flex: 1;
+    align-content: start;
+  }
+  #s4 .participant-card {
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    padding: clamp(12px,1.6vh,18px) clamp(12px,1.2vw,16px);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.18s, box-shadow 0.18s;
+  }
+  #s4 .participant-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow);
+  }
+  /* Left accent bar driven by region */
+  #s4 .participant-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--ibm-blue);
+  }
+  #s4 .participant-card.apac::before     { background: var(--ibm-cyan); }
+  #s4 .participant-card.emea::before     { background: var(--ibm-purple); }
+  #s4 .participant-card.americas::before { background: var(--ibm-orange); }
+  #s4 .participant-card.star::before     { background: var(--ibm-yellow); }
+
+  #s4 .participant-card .p-name {
+    font-size: clamp(12px,1.1vw,14px);
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  #s4 .participant-card .p-loc {
+    font-size: clamp(11px,0.9vw,13px);
+    color: var(--text-muted);
+    margin-bottom: 5px;
+  }
+  #s4 .participant-card .p-role {
+    font-size: clamp(11px,0.9vw,12px);
+    color: var(--eyebrow-color);
+    font-weight: 500;
+    margin-top: auto;
+  }
+  #s4 .participant-card.star .p-role { color: var(--ibm-yellow); }
+  [data-theme="light"] #s4 .participant-card.star .p-role { color: #8e6a00; }
+
+  /* Footnote */
+  #s4 .s4-footnote {
+    font-size: 11px;
+    color: var(--text-disabled);
+    padding-top: clamp(8px,1.5vh,14px);
+    flex-shrink: 0;
+    border-top: 1px solid var(--border-subtle);
+    margin-top: clamp(8px,1.5vh,14px);
+  }
+
+  .p-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--ibm-blue); flex-shrink: 0; margin-bottom: 4px; }
+  .p-dot.apac { background: var(--ibm-cyan); }
+  .p-dot.emea { background: var(--ibm-purple); }
+  .p-dot.americas { background: var(--ibm-orange); }
+  .p-dot.star { background: var(--ibm-yellow); }
+
+  /* ── SLIDE 5: SYSTEMS GAP ── */
+  #s5 { background: var(--slide-bg); padding: 5%; display: flex; flex-direction: column; }
+  #s5 .three-sources { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 28px; flex: 1; }
+  .source-card { background: var(--surface); padding: 32px; display: flex; flex-direction: column; position: relative; overflow: hidden; border: 1px solid var(--border-subtle); transition: transform 0.2s, box-shadow 0.2s; }
+  .source-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px var(--shadow); }
+  .source-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--ibm-blue); }
+  .source-card.broken::before { background: var(--ibm-red); }
+  .source-card.shadow::before { background: var(--ibm-orange); }
+  .source-num { font-size: 80px; font-weight: 200; line-height: 1; color: var(--border); position: absolute; bottom: 10px; right: 16px; }
+  .source-icon { font-size: 32px; margin-bottom: 16px; }
+  .source-title { font-size: 20px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+  .source-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+  .source-verdict { margin-top: auto; padding-top: 18px; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .source-verdict.bad { color: var(--ibm-red); }
+  .source-verdict.warn { color: var(--ibm-orange); }
+
+  /* ── SLIDE 6: SELLER JOURNEY ── */
+  #s6 { background: var(--slide-bg); padding: 4% 5%; display: flex; flex-direction: column; }
+  #s6 .journey-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; margin-top: 22px; flex: 1; }
+  .stage-block { display: flex; flex-direction: column; position: relative; }
+  .stage-header { padding: 14px 14px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .stage-block.low .stage-header    { background: rgba(36,161,72,0.18);  color: #0e6027; }
+  .stage-block.med .stage-header    { background: rgba(241,194,27,0.18); color: #8e6a00; }
+  .stage-block.high .stage-header   { background: rgba(255,131,43,0.2);  color: #8a3800; }
+  .stage-block.critical .stage-header { background: rgba(218,30,40,0.16); color: #a2191f; }
+  [data-theme="dark"] .stage-block.low .stage-header      { color: #a7f0ba; }
+  [data-theme="dark"] .stage-block.med .stage-header      { color: #fdd13a; }
+  [data-theme="dark"] .stage-block.high .stage-header     { color: #ffb784; }
+  [data-theme="dark"] .stage-block.critical .stage-header { color: #ffd7d9; }
+  .stage-body { background: var(--surface); padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .stage-name { font-size: 13px; font-weight: 600; color: var(--text-primary); line-height: 1.3; margin-bottom: 4px; }
+  .stage-friction { font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 3px 8px; display: inline-block; margin-bottom: 6px; }
+  .stage-block.low .stage-friction    { background: rgba(36,161,72,0.18);  color: #0e6027; }
+  .stage-block.med .stage-friction    { background: rgba(241,194,27,0.18); color: #8e6a00; }
+  .stage-block.high .stage-friction   { background: rgba(255,131,43,0.18); color: #8a3800; }
+  .stage-block.critical .stage-friction { background: rgba(218,30,40,0.14); color: #a2191f; }
+  [data-theme="dark"] .stage-block.low .stage-friction      { color: #a7f0ba; }
+  [data-theme="dark"] .stage-block.med .stage-friction      { color: #fdd13a; }
+  [data-theme="dark"] .stage-block.high .stage-friction     { color: #ffb784; }
+  [data-theme="dark"] .stage-block.critical .stage-friction { color: #ffd7d9; }
+  .stage-bullet { font-size: 12px; color: var(--text-secondary); line-height: 1.55; padding-left: 12px; position: relative; }
+  .stage-bullet::before { content: '·'; position: absolute; left: 3px; color: var(--text-muted); }
+  .stage-days { font-size: 11px; color: var(--text-muted); margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border); }
+
+  /* ── SLIDE 7: TWO COLLAPSE POINTS ── */
+  #s7 { background: var(--slide-bg); display: grid; grid-template-columns: 1fr 1fr; height: 100%; }
+  .collapse-panel { padding: 6%; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+  .collapse-panel.left { border-right: 1px solid var(--border); }
+  .collapse-panel .cp-num { font-size: clamp(90px,10vw,130px); font-weight: 200; color: var(--border-subtle); position: absolute; top: 20px; right: 30px; line-height: 1; z-index: 0; }
+  [data-theme="dark"] .collapse-panel .cp-num { color: #262626; }
+  .collapse-panel .cp-content { position: relative; z-index: 1; }
+  .collapse-panel h3 { font-size: clamp(20px, 2.2vw, 30px); font-weight: 400; color: var(--text-primary); line-height: 1.35; margin: 18px 0; }
+  .collapse-panel .cp-quote { font-size: 15px; font-style: italic; color: var(--text-secondary); line-height: 1.75; border-left: 2px solid var(--ibm-red); padding-left: 18px; margin-top: 22px; }
+  .collapse-panel .cp-fact { margin-top: 26px; background: var(--red-tint-bg); border: 1px solid var(--red-tint-border); padding: 20px 24px; }
+  .collapse-panel .cp-fact .fact-num { font-size: clamp(32px, 3.5vw, 46px); font-weight: 200; color: var(--ibm-red); line-height: 1; }
+  .collapse-panel .cp-fact .fact-label { font-size: 13px; color: var(--text-secondary); margin-top: 6px; line-height: 1.55; }
+
+  /* ── SLIDE 8: THE FIVE FINDINGS ── */
+  #s8 { background: var(--slide-bg); padding: 4% 5%; display: flex; flex-direction: column; }
+  #s8 .findings-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 14px; margin-top: 20px; flex: 1; }
+  .finding-card { background: var(--surface); padding: 22px 26px; display: flex; flex-direction: column; position: relative; overflow: hidden; border: 1px solid var(--border-subtle); transition: transform 0.2s; }
+  .finding-card:hover { transform: translateY(-2px); }
+  .finding-card:nth-child(5) { grid-column: 1 / -1; }
+  .finding-card .f-id { font-size: 12px; font-weight: 700; color: var(--eyebrow-color); letter-spacing: 0.1em; margin-bottom: 8px; }
+  .finding-card.deal-blocking .f-id { color: var(--ibm-red); }
+  .finding-card h4 { font-size: clamp(14px, 1.3vw, 17px); font-weight: 600; color: var(--text-primary); line-height: 1.4; margin-bottom: 8px; }
+  .finding-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.65; flex: 1; }
+  .finding-card .deal-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--red-tint-bg); color: #a2191f; border: 1px solid var(--red-tint-border); padding: 3px 10px; margin-top: 8px; align-self: flex-start; }
+  [data-theme="dark"] .finding-card .deal-badge { color: #ffd7d9; }
+  .finding-card .c5-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: var(--blue-tint-bg); color: #0043ce; border: 1px solid var(--blue-tint-border); padding: 3px 10px; margin-top: 8px; align-self: flex-start; }
+  [data-theme="dark"] .finding-card .c5-badge { color: #d0e2ff; }
+  .finding-card::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--ibm-blue); }
+  .finding-card.deal-blocking::after { background: var(--ibm-red); }
+
+  /* ── SLIDE 9: VOICE OF THE SELLER ── */
+  #s9 { background: var(--slide-bg); padding: 5%; display: flex; flex-direction: column; }
+  .quotes-mosaic { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px; margin-top: 24px; flex: 1; }
+  .quote-tile { background: var(--surface); padding: 26px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--border-subtle); transition: transform 0.2s; }
+  .quote-tile:hover { transform: translateY(-2px); }
+  .quote-tile:first-child { grid-column: 1 / 3; background: var(--blue-tint-bg); border: 1px solid var(--blue-tint-border); }
+  .quote-tile .qt-text { font-size: clamp(14px, 1.3vw, 16px); font-weight: 300; color: var(--text-primary); line-height: 1.75; font-style: italic; }
+  .quote-tile:first-child .qt-text { font-size: clamp(15px, 1.5vw, 19px); }
+  .quote-tile .qt-attr { margin-top: 16px; font-size: 12px; color: var(--text-muted); font-style: normal; font-weight: 600; letter-spacing: 0.04em; }
+  .quote-tile .qt-attr span { color: var(--ibm-blue); }
+  .quote-tile .openquote { font-size: 80px; color: var(--ibm-blue); line-height: 0.6; font-family: Georgia, serif; opacity: 0.22; float: left; margin-right: 8px; }
+
+  /* ── SLIDE 10: REGIONAL PAIN MAP ── */
+  #s10 { background: var(--slide-bg); padding: 4% 5%; display: flex; flex-direction: column; }
+  #s10 .regions-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; margin-top: 22px; flex: 1; }
+  .region-card { background: var(--surface); padding: 26px; display: flex; flex-direction: column; border: 1px solid var(--border-subtle); transition: transform 0.2s, box-shadow 0.2s; }
+  .region-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px var(--shadow); }
+  .region-card .r-flag { font-size: 32px; margin-bottom: 12px; }
+  .region-card .r-name { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 5px; }
+  .region-card .r-role { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .region-card .r-pain { font-size: 13px; color: var(--text-secondary); line-height: 1.7; flex: 1; }
+  .region-card .r-stat { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: clamp(20px, 2.2vw, 28px); font-weight: 200; color: var(--ibm-red); line-height: 1; }
+  .region-card .r-stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
+
+  /* ── SLIDE 11: AI DISPLACEMENT ── */
+  #s11 { background: var(--slide-bg); display: grid; grid-template-columns: 34% 1fr; height: 100%; }
+  #s11 .left-col { background: var(--surface); padding: 6% 5%; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--border); }
+  #s11 .right-col { padding: 5%; display: flex; flex-direction: column; justify-content: center; }
+  .ai-adoption-bar { margin-top: 16px; }
+  .ai-bar-label { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-secondary); margin-bottom: 7px; }
+  .ai-bar-track { height: 10px; background: var(--border); position: relative; border-radius: 2px; }
+  .ai-bar-fill { height: 100%; background: var(--ibm-blue); border-radius: 2px; }
+  .ai-bar-fill.high { background: var(--ibm-red); }
+  .ai-tools-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
+  .ai-tool { background: var(--slide-bg); border: 1px solid var(--border); padding: 14px 16px; display: flex; align-items: center; gap: 12px; transition: border-color 0.2s; }
+  .ai-tool:hover { border-color: var(--ibm-blue); }
+  .ai-tool .tool-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--ibm-blue); flex-shrink: 0; }
+  .ai-tool .tool-dot.shadow-tool { background: var(--ibm-orange); }
+  .ai-tool .tool-name { font-size: 14px; color: var(--text-primary); font-weight: 600; }
+  .ai-tool .tool-note { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── SLIDE 12: SHADOW CONTENT ── */
+  #s12 { background: var(--slide-bg); padding: 5%; display: flex; flex-direction: column; }
+  .shadow-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 28px; flex: 1; }
+  .shadow-card { background: var(--orange-tint-bg); border: 1px solid var(--orange-tint-border); padding: 28px; display: flex; flex-direction: column; transition: transform 0.2s; }
+  .shadow-card:hover { transform: translateY(-3px); }
+  .shadow-card .sc-name { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+  .shadow-card .sc-loc { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--orange-tint-border); }
+  .shadow-card .sc-asset { font-size: 14px; font-weight: 600; color: var(--ibm-orange); margin-bottom: 9px; }
+  [data-theme="light"] .shadow-card .sc-asset { color: #8a3800; }
+  .shadow-card .sc-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.7; flex: 1; }
+  .shadow-card .sc-status { margin-top: 16px; font-size: 12px; font-weight: 700; color: var(--ibm-red); letter-spacing: 0.06em; text-transform: uppercase; }
+
+  /* ── SLIDE 13: DEAL-BLOCKING EVIDENCE ── */
+  #s13 { background: var(--slide-bg); padding: 4% 5%; display: flex; flex-direction: column; }
+  .evidence-table { margin-top: 22px; display: flex; flex-direction: column; flex: 1; gap: 2px; }
+  .ev-row { display: grid; grid-template-columns: 22% 1fr 170px; background: var(--border-subtle); gap: 1px; }
+  .ev-row.header { background: transparent; }
+  .ev-cell { padding: 15px 20px; background: var(--surface); font-size: 14px; color: var(--text-secondary); line-height: 1.55; }
+  .ev-cell.header-cell { background: transparent; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding: 0 20px 10px; }
+  .ev-cell.gap { color: var(--text-primary); font-weight: 600; font-size: 14px; }
+  .ev-cell.source { color: var(--text-muted); font-size: 13px; }
+  .severity-badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; }
+  .severity-badge.critical { background: var(--red-tint-bg); color: #a2191f; border: 1px solid var(--red-tint-border); }
+  .severity-badge.high     { background: var(--orange-tint-bg); color: #8a3800; border: 1px solid var(--orange-tint-border); }
+  .severity-badge.medium   { background: rgba(241,194,27,0.16); color: #8e6a00; border: 1px solid rgba(241,194,27,0.35); }
+  [data-theme="dark"] .severity-badge.critical { color: #ffd7d9; }
+  [data-theme="dark"] .severity-badge.high     { color: #ffb784; }
+  [data-theme="dark"] .severity-badge.medium   { color: #fdd13a; }
+
+  /* ── SLIDE 14: RECOMMENDATIONS ── */
+  #s14 { background: var(--slide-bg); padding: 4% 5%; display: flex; flex-direction: column; }
+  .rec-tiers { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; margin-top: 22px; flex: 1; }
+  .rec-tier { display: flex; flex-direction: column; }
+  .rec-tier-header { padding: 14px 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+  .rec-tier-header.quick    { background: var(--green-tint-bg);  color: #0e6027; }
+  .rec-tier-header.value    { background: var(--blue-tint-bg);   color: #0043ce; }
+  .rec-tier-header.easy     { background: rgba(0,157,154,0.12);  color: #004144; }
+  .rec-tier-header.strategic{ background: var(--purple-tint-bg); color: #6929c4; }
+  [data-theme="dark"] .rec-tier-header.quick     { color: #a7f0ba; }
+  [data-theme="dark"] .rec-tier-header.value     { color: #d0e2ff; }
+  [data-theme="dark"] .rec-tier-header.easy      { color: #9ef0f0; }
+  [data-theme="dark"] .rec-tier-header.strategic { color: #e8daff; }
+  .rec-item { background: var(--surface); padding: 11px 15px; margin-bottom: 2px; font-size: 13px; color: var(--text-secondary); line-height: 1.55; display: flex; align-items: flex-start; gap: 8px; border: 1px solid var(--border-subtle); }
+  .rec-item.urgent { border-left: 3px solid var(--ibm-red); }
+
+  /* ── SLIDE 15: NORTH STAR ── */
+  #s15 {
+    background: var(--slide-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 4% 5%;
+    overflow-y: auto;
+  }
+  #s15 .starq {
+    font-size: clamp(22px, 3.1vw, 44px); line-height: 1.22; font-weight: 200;
+    letter-spacing: -0.025em; max-width: 22ch; color: var(--text-primary);
+  }
+  #s15 .starq em { font-style: normal; color: var(--ibm-blue); }
+  #s15 .threes {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+    margin-top: clamp(16px,3vh,32px);
+  }
+  #s15 .three {
+    background: var(--surface); padding: clamp(16px,2vw,26px);
+    border-top: 2px solid var(--ibm-blue);
+  }
+  #s15 .three h4 { font-size: 15px; font-weight: 400; color: var(--text-primary); margin-bottom: 8px; }
+  #s15 .three p { font-size: 14px; line-height: 1.45; color: var(--text-secondary); font-weight: 300; }
+  #s15 .three .m {
+    margin-top: 12px; font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.32px; color: var(--text-muted);
+  }
+  #s15 .demand {
+    margin-top: clamp(16px,3vh,32px); border-top: 1px solid var(--border);
+    padding-top: clamp(14px,2.4vh,24px);
+  }
+  #s15 .tiny {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    letter-spacing: 0.32px; color: var(--text-muted);
+  }
+  #s15 .dnums { display: flex; flex-wrap: wrap; gap: clamp(16px,3vw,44px); margin: 14px 0; }
+  #s15 .dnums div { display: flex; align-items: baseline; gap: 8px; }
+  #s15 .dnums b { font-size: clamp(22px,2.4vw,34px); font-weight: 200; letter-spacing: -0.02em; color: var(--text-primary); }
+  #s15 .dnums span { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.32px; color: var(--text-muted); }
+  #s15 .mix { display: flex; height: 10px; overflow: hidden; transition: height 0.3s; }
+  #s15 .mix:hover { height: 18px; }
+  #s15 .mix i { display: block; }
+  #s15 .mixkey {
+    display: flex; flex-wrap: wrap; gap: 18px; margin-top: 10px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+    letter-spacing: 0.32px; color: var(--text-muted);
+  }
+  #s15 .mixkey span { display: flex; align-items: center; gap: 6px; }
+  #s15 .mixkey em { width: 8px; height: 8px; font-style: normal; display: inline-block; }
+  #s15 .point {
+    margin-top: 14px; font-size: clamp(15px,1.4vw,19px); line-height: 1.45;
+    font-weight: 300; max-width: 64ch; color: var(--text-secondary);
+  }
+  #s15 .point em { font-style: normal; color: var(--ibm-blue); }
+  /* log disclosure */
+  #s15 .disc { margin-top: 14px; }
+  #s15 .disc button {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.32px;
+    color: var(--ibm-cyan); display: flex; align-items: center; gap: 8px;
+    background: none; border: none; cursor: pointer; padding: 0;
+  }
+  #s15 .disc button svg { width: 14px; height: 14px; fill: currentColor; transition: transform 0.3s; }
+  #s15 .disc button[aria-expanded="true"] svg { transform: rotate(180deg); }
+  #s15 .disc__body { display: none; margin-top: 14px; }
+  #s15 .disc__body.open { display: block; }
+  #s15 .chips { display: flex; flex-wrap: wrap; gap: 2px; margin-bottom: 2px; }
+  #s15 .chip {
+    padding: 7px 14px; background: var(--surface); font-size: 12.5px;
+    color: var(--text-secondary); cursor: pointer; transition: .2s; border: none; font-family: inherit;
+  }
+  #s15 .chip:hover { background: var(--border); color: var(--text-primary); }
+  #s15 .chip[aria-selected="true"] { background: var(--ibm-blue); color: #fff; }
+  #s15 .chip .n { font-family: 'IBM Plex Mono', monospace; font-size: 11px; opacity: .75; margin-left: 6px; }
+  #s15 .logwrap { max-height: 32vh; overflow: auto; background: var(--surface); }
+  #s15 .logwrap::-webkit-scrollbar { width: 5px; }
+  #s15 .logwrap::-webkit-scrollbar-thumb { background: var(--border); }
+  #s15 table.log { width: 100%; border-collapse: collapse; font-size: 13px; }
+  #s15 table.log th {
+    position: sticky; top: 0; background: var(--surface-alt);
+    text-align: left; padding: 9px 14px; font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.32px; color: var(--text-muted); font-weight: 400;
+  }
+  #s15 table.log td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; line-height: 1.4; font-weight: 300; }
+  #s15 table.log td:first-child { color: var(--text-primary); }
+  #s15 table.log tr:hover td { background: var(--surface); }
+  #s15 table.log tr.hide { display: none; }
+
+  /* ── SLIDE 16: THE ASK ── */
+  #s16 { background: var(--slide-bg); display: flex; flex-direction: column; height: 100%; padding: 4% 5%; padding-bottom: clamp(20px,3vw,52px); overflow-y: auto; }
+  #s16 h2.s16-heading { font-size: clamp(28px, 3.5vw, 52px); font-weight: 300; line-height: 1.2; letter-spacing: -.02em; color: var(--text-primary); margin-bottom: 0; }
+  .s16-branch { display: block; width: 100%; height: clamp(44px,7vh,70px); margin-top: clamp(6px,1.4vh,14px); }
+  .s16-branch .wire { fill: none; stroke: var(--ibm-blue); stroke-width: 1; opacity: .55; }
+  .s16-branch .node { fill: var(--text-disabled); }
+  .s16-branch .pulse { fill: var(--ibm-blue-light); }
+  .s16-asks { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+  .s16-askc { background: var(--surface); padding: clamp(16px,2vw,28px); position: relative; overflow: hidden; transition: background .2s ease, transform .3s ease; }
+  .s16-askc:hover { background: var(--surface-alt); transform: translateY(-3px); }
+  .s16-askc::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--ibm-blue); transform: scaleX(0); transform-origin: left; transition: transform .35s ease; }
+  .s16-askc:hover::after { transform: scaleX(1); }
+  .s16-askc .n { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .32px; color: var(--ibm-blue-light); display: flex; align-items: center; gap: 8px; }
+  .s16-askc .n::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ibm-blue); box-shadow: 0 0 0 3px rgba(15,98,254,0.2); }
+  .s16-askc h4 { margin: 12px 0 8px; font-size: clamp(17px,1.7vw,24px); line-height: 1.25; font-weight: 300; letter-spacing: -.015em; color: var(--text-primary); }
+  .s16-askc p { font-size: 13.5px; line-height: 1.45; color: var(--text-secondary); font-weight: 300; }
+  .s16-worktabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-top: clamp(18px,3vh,34px); }
+  .s16-wt { padding: 11px 18px; font-size: 13px; color: var(--text-muted); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: .2s ease; background: none; border-top: 0; border-left: 0; border-right: 0; cursor: pointer; font-family: inherit; }
+  .s16-wt:hover { color: var(--text-primary); }
+  .s16-wt[aria-selected="true"] { color: var(--text-primary); border-bottom-color: var(--ibm-blue); }
+  .s16-wt .n { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); margin-left: 6px; }
+  .s16-wp { display: none; padding-top: 16px; }
+  .s16-wp.open { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+  .s16-witem { background: var(--surface); padding: 14px 16px; position: relative; transition: background .2s ease; min-height: 96px; }
+  .s16-witem:hover { background: var(--surface-alt); }
+  .s16-witem h5 { font-size: 14px; font-weight: 400; line-height: 1.3; color: var(--text-primary); margin: 0; }
+  .s16-witem p { margin: 6px 0 0; font-size: 12.5px; line-height: 1.4; color: var(--text-muted); font-weight: 300; opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .3s ease; }
+  .s16-witem:hover p, .s16-witem:focus-within p { opacity: 1; transform: none; }
+  .s16-witem.urgent { box-shadow: inset 3px 0 0 var(--ibm-red); }
+  .s16-witem .flag { position: absolute; top: 14px; right: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .6px; text-transform: uppercase; color: var(--ibm-red); }
+  .s16-witem .flag::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ibm-red); margin-right: 6px; vertical-align: 1px; }
+</style>
+</head>
+<body>
+
+<div id="hud-top">
+  <span id="slide-counter">1 / 16</span>
+  <button id="theme-toggle">☀ Light</button>
+</div>
+<button class="ctrl-btn" id="prev-btn" disabled>&#8249;</button>
+<button class="ctrl-btn" id="next-btn">&#8250;</button>
+
+<div id="stage">
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide active" id="s1">
+
+    <!-- LEFT: deep blue panel -->
+    <div class="s1-left">
+      <!-- Brand strip -->
+      <div class="s1-brand">IBM Z &amp; LinuxONE · Seller Enablement · 2026</div>
+
+      <!-- Headline block -->
+      <div class="s1-headline">
+        <h1>Seller enablement,<br><em>by design</em></h1>
+        <div class="s1-rule"></div>
+        <p class="s1-lede">How IBM Z and LinuxONE sellers actually get their work done — thirteen sellers,
+          six countries, thirteen private workarounds, <b>not one of them ours.</b></p>
+        <div class="s1-callout">
+          <p>What they built, what it is costing, and what happens when we design it properly.</p>
+        </div>
+      </div>
+
+      <!-- Bottom meta -->
+      <div class="s1-meta">
+        <div class="s1-meta-item">13 Interviews</div>
+        <div class="s1-meta-divider"></div>
+        <div class="s1-meta-item">6 Countries</div>
+        <div class="s1-meta-divider"></div>
+        <div class="s1-meta-item">3 Regions</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: stat figures -->
+    <div class="s1-right">
+      <div class="s1-stats-label">Study at a glance</div>
+      <div class="s1-figs">
+        <div class="s1-fig">
+          <b>13</b>
+          <div class="fig-text">
+            <span>Sellers interviewed</span>
+            <span class="fig-sub">Americas · EMEA · APAC</span>
+          </div>
+        </div>
+        <div class="s1-fig">
+          <b>6</b>
+          <div class="fig-text">
+            <span>Countries represented</span>
+            <span class="fig-sub">US · France · Japan · India · Turkey · South Africa</span>
+          </div>
+        </div>
+        <div class="s1-fig">
+          <b>20</b>
+          <div class="fig-text">
+            <span>Requests already on our desk</span>
+            <span class="fig-sub">Raised before this study concluded</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SLIDE 2: AGENDA -->
+  <div class="slide" id="s2">
+    <div class="left-panel">
+      <div>
+        <div class="eyebrow">IBM Z &amp; LinuxONE</div>
+        <div style="font-size:clamp(22px,2.4vw,32px);font-weight:300;color:var(--text-primary);line-height:1.4;">Seller Enablement<br>Research Study</div>
+        <div style="font-size:14px;color:var(--text-muted);margin-top:18px;line-height:1.7;">13 Interviews · 3 Regions</div>
+      </div>
+      <div style="font-size:13px;color:var(--text-disabled);padding-top:24px;border-top:1px solid var(--border);">Use ← → keys or click buttons to navigate</div>
+    </div>
+    <div class="right-panel">
+      <div class="eyebrow" style="margin-bottom:24px;">Today's Agenda</div>
+      <div class="agenda-item"><div class="agenda-num">01</div><div><div class="agenda-title">The Problem We Set Out to Solve</div><div class="agenda-sub">The systems gap — not a content gap</div></div></div>
+      <div class="agenda-item"><div class="agenda-num">02</div><div><div class="agenda-title">Who We Spoke To</div><div class="agenda-sub">13 participants across 6 countries, 3 regions</div></div></div>
+      <div class="agenda-item"><div class="agenda-num">03</div><div><div class="agenda-title">The Seller Journey — Where It Breaks</div><div class="agenda-sub">6 stages, 2 critical collapse points</div></div></div>
+      <div class="agenda-item"><div class="agenda-num">04</div><div><div class="agenda-title">The Five Biggest Findings</div><div class="agenda-sub">AI displacement, deal-blocking gaps, tribal knowledge</div></div></div>
+      <div class="agenda-item"><div class="agenda-num">05</div><div><div class="agenda-title">What It's Costing in Deals</div><div class="agenda-sub">Named gaps, named competitors, named deal losses</div></div></div>
+      <div class="agenda-item"><div class="agenda-num">06</div><div><div class="agenda-title">30 Recommendations + Design North Star</div><div class="agenda-sub">Quick wins → strategic investments</div></div></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: THE PROBLEM -->
+  <div class="slide" id="s3">
+    <div class="left">
+      <div class="eyebrow">The Central Problem</div>
+      <div class="rule"></div>
+      <div style="font-size:clamp(28px,3.2vw,44px);font-weight:300;color:var(--text-primary);line-height:1.3;">This is not a<br><span style="color:var(--ibm-blue);font-weight:500;">content gap</span>.<br>It is a <span style="color:var(--ibm-red);font-weight:500;">systems gap</span>.</div>
+      <div class="big-quote">Selling IBM Z and LinuxONE is a 9–12 month knowledge-intensive consultative sale. The knowledge sellers need lives in three disconnected places. None are designed around what sellers actually face in front of a customer.</div>
+      <div style="margin-top:24px;">
+        <div class="ibm-tag" style="margin-right:8px;">9–12 Month Sales Cycles</div>
+        <div class="ibm-tag red" style="margin-top:10px;">Zero Coherent Knowledge System</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="eyebrow dim">The Scale of the Problem</div>
+      <div style="margin-top:24px;">
+        <div class="problem-stat">12/13</div>
+        <div style="font-size:15px;color:var(--text-secondary);margin-top:10px;line-height:1.65;">sellers independently built<br>AI workarounds because<br>official tools don't answer<br>their questions</div>
+      </div>
+      <div style="margin-top:40px;padding-top:40px;border-top:1px solid var(--border);">
+        <div style="font-size:clamp(44px,5vw,60px);font-weight:200;color:var(--ibm-orange);line-height:1;">6 hrs</div>
+        <div style="font-size:15px;color:var(--text-secondary);margin-top:10px;line-height:1.65;">to translate a single document<br>in Japan. Every time.<br>For every customer.</div>
+      </div>
+      <div style="margin-top:40px;padding-top:40px;border-top:1px solid var(--border);">
+        <div style="font-size:clamp(44px,5vw,60px);font-weight:200;color:var(--ibm-red);line-height:1;">2 people</div>
+        <div style="font-size:15px;color:var(--text-secondary);margin-top:10px;line-height:1.65;">nationally in the US who can<br>implement LinuxONE.<br>Both booked through 2028.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: STUDY SCOPE -->
+  <div class="slide" id="s4">
+
+    <!-- LEFT: stats -->
+    <div class="s4-left">
+      <div class="s4-heading">Study Scope</div>
+      <p class="s4-sub">13 participants · 6 countries · 3 regions · first-of-kind profiles</p>
+      <div class="stat-cell"><div class="n">13</div><div class="l">Interviews</div></div>
+      <div class="stat-cell"><div class="n">141</div><div class="l">Verbatim quotes</div></div>
+      <div class="stat-cell"><div class="n">9</div><div class="l">Robust findings</div></div>
+      <div class="stat-cell"><div class="n">3</div><div class="l">Languages impacted</div></div>
+      <div class="stat-cell"><div class="n">10</div><div class="l">Themes confirmed</div></div>
+    </div>
+
+    <!-- RIGHT: participant cards -->
+    <div class="s4-right">
+      <div class="s4-right-header">
+        <div class="s4-heading">Participant Roster</div>
+        <div class="s4-legend">
+          <div class="s4-legend-item"><div class="s4-legend-dot" style="background:var(--ibm-cyan)"></div>APAC</div>
+          <div class="s4-legend-item"><div class="s4-legend-dot" style="background:var(--ibm-purple)"></div>EMEA</div>
+          <div class="s4-legend-item"><div class="s4-legend-dot" style="background:var(--ibm-orange)"></div>Americas</div>
+          <div class="s4-legend-item"><div class="s4-legend-dot" style="background:var(--ibm-yellow)"></div>First-of-kind ★</div>
+        </div>
+      </div>
+
+      <div class="participants-grid">
+        <div class="participant-card emea">
+          <div class="p-name">Bulent Palabiyik</div>
+          <div class="p-loc">🇹🇷 Turkey</div>
+          <div class="p-role">Hardware Seller</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Hideomi Ezumi</div>
+          <div class="p-loc">🇯🇵 Japan</div>
+          <div class="p-role">Product Mgmt</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Rina Shoji</div>
+          <div class="p-loc">🇯🇵 Japan</div>
+          <div class="p-role">Select HW Sales</div>
+        </div>
+        <div class="participant-card emea">
+          <div class="p-name">Keziah Doh</div>
+          <div class="p-loc">🇫🇷 France</div>
+          <div class="p-role">Z &amp; LinuxONE Seller</div>
+        </div>
+        <div class="participant-card americas">
+          <div class="p-name">Matt Geran</div>
+          <div class="p-loc">🇺🇸 USA</div>
+          <div class="p-role">Z FSM</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Karan Arya</div>
+          <div class="p-loc">🇮🇳 India</div>
+          <div class="p-role">Z Architect / TS</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Suresh Jayanthi</div>
+          <div class="p-loc">🇮🇳 India</div>
+          <div class="p-role">Sales Leadership</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Daisuke Shimizu</div>
+          <div class="p-loc">🇯🇵 Japan</div>
+          <div class="p-role">Partner Sales</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Ashish Kakade</div>
+          <div class="p-loc">🇮🇳 India</div>
+          <div class="p-role">LinuxONE HW Seller</div>
+        </div>
+        <div class="participant-card apac">
+          <div class="p-name">Nilanshu Dharma</div>
+          <div class="p-loc">🇮🇳 India</div>
+          <div class="p-role">Technical Sales</div>
+        </div>
+        <div class="participant-card star">
+          <div class="p-name">★ Moesha Malik</div>
+          <div class="p-loc">🇺🇸 USA</div>
+          <div class="p-role">Horizon Seller</div>
+        </div>
+        <div class="participant-card star">
+          <div class="p-name">★ Jacqueline Coelho</div>
+          <div class="p-loc">🇿🇦 South Africa</div>
+          <div class="p-role">Haven Specialist</div>
+        </div>
+        <div class="participant-card star">
+          <div class="p-name">★ Matt Mondics</div>
+          <div class="p-loc">🇺🇸 USA</div>
+          <div class="p-role">Technical Sales</div>
+        </div>
+      </div>
+
+      <div class="s4-footnote">★ First-of-kind profiles: first Horizon seller · first Africa/MEA seller · first Americas technical seller</div>
+    </div>
+
+  </div>
+
+  <!-- SLIDE 5: SYSTEMS GAP -->
+  <div class="slide" id="s5">
+    <div style="padding:5% 5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">Root Cause Analysis</div>
+      <div style="font-size:clamp(18px,2.2vw,28px);font-weight:300;color:var(--text-primary);margin-top:8px;">Three knowledge sources. None designed for sellers. None connected.</div>
+      <div class="three-sources">
+        <div class="source-card">
+          <div class="source-icon">📂</div>
+          <div class="source-title">Official IBM Content</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ibm-blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;">Seismic / Sales Kit</div>
+          <div class="source-desc">Valued during onboarding and product launches. Then sellers stop returning. Search returns documents, not answers. No push notifications. Content goes stale in local OneDrives. Competitive intelligence: entirely absent. Broken/dead links are routine.</div>
+          <div class="source-verdict bad">Declining usage · Stale risk</div>
+          <div class="source-num">01</div>
+        </div>
+        <div class="source-card broken">
+          <div class="source-icon">🤖</div>
+          <div class="source-title">AI Tools (Shadow Stack)</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ibm-red);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;">Claude · Copilot · Gemini · WatsonX</div>
+          <div class="source-desc">Independently adopted by 12 of 13 sellers as workarounds. Answering questions faster than Seismic. Moesha built a 3-day LinuxONE crash course with Copilot. Matt Mondics built a custom IBM Design System prompt in Claude. No IBM oversight. No privacy guardrails enforced.</div>
+          <div class="source-verdict bad">Unsanctioned · Uncontrolled</div>
+          <div class="source-num">02</div>
+        </div>
+        <div class="source-card shadow">
+          <div class="source-icon">🧠</div>
+          <div class="source-title">Experienced Colleagues</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ibm-orange);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;">The Real Knowledge System</div>
+          <div class="source-desc">The primary knowledge system for the organisation — and it is entirely informal. New sellers interrupt experienced colleagues daily for pricing steps, process questions, SME contacts. 15+ year veterans hold institutional memory in personal OneDrives and personal networks. When they move on, it disappears.</div>
+          <div class="source-verdict warn">Fragile · Non-scalable · Unrecoverable</div>
+          <div class="source-num">03</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: SELLER JOURNEY -->
+  <div class="slide" id="s6">
+    <div class="eyebrow" style="padding:4% 5% 0;">The Sales Journey</div>
+    <div style="padding:0 5%;font-size:clamp(14px,1.5vw,19px);font-weight:300;color:var(--text-primary);margin-top:6px;">~270-day actual cycle vs 90-day quarterly targets — a structural mismatch baked into every deal</div>
+    <div class="journey-row" style="padding:0 5%;margin-bottom:3%;">
+      <div class="stage-block high">
+        <div class="stage-header">01 · Target &amp; Qualify</div>
+        <div class="stage-body">
+          <div class="stage-name">Identify opportunity</div>
+          <div class="stage-friction">HIGH FRICTION</div>
+          <div class="stage-bullet">No IBM prospect intelligence tool</div>
+          <div class="stage-bullet">No competitor stack data</div>
+          <div class="stage-bullet">Cold calling &amp; partner networks only</div>
+          <div class="stage-bullet">Horizon: zero entry-point content</div>
+          <div class="stage-bullet">Haven: no Thales competitive intel</div>
+          <div class="stage-days">🟠 Critical Gap</div>
+        </div>
+      </div>
+      <div class="stage-block med">
+        <div class="stage-header">02 · Prepare &amp; Research</div>
+        <div class="stage-body">
+          <div class="stage-name">Build knowledge base</div>
+          <div class="stage-friction">MEDIUM FRICTION</div>
+          <div class="stage-bullet">AI replaces Seismic for Q&A</div>
+          <div class="stage-bullet">TLLB downloaded, used offline</div>
+          <div class="stage-bullet">No TLLB for Emperor 5</div>
+          <div class="stage-bullet">Banking-only use cases</div>
+          <div class="stage-days">🟡 Partial Coverage</div>
+        </div>
+      </div>
+      <div class="stage-block critical">
+        <div class="stage-header">03 · Build Proposal</div>
+        <div class="stage-body">
+          <div class="stage-name">Create customer proposal</div>
+          <div class="stage-friction">CRITICAL FRICTION</div>
+          <div class="stage-bullet">Japan: 6+ hrs to translate 1 doc</div>
+          <div class="stage-bullet">India: 0.5–3 days per proposal</div>
+          <div class="stage-bullet">DOAP kits: same-day delivery needed</div>
+          <div class="stage-bullet">AI translation + manual QA loop</div>
+          <div class="stage-days">🔴 Non-English Penalty</div>
+        </div>
+      </div>
+      <div class="stage-block low">
+        <div class="stage-header">04 · Customer Engagement</div>
+        <div class="stage-body">
+          <div class="stage-name">Technical &amp; exec meetings</div>
+          <div class="stage-friction">LOW FRICTION</div>
+          <div class="stage-bullet">IKE 3D demo for hardware viz</div>
+          <div class="stage-bullet">Videos blocked by India client filters</div>
+          <div class="stage-bullet">No "under the hood" brief exists</div>
+          <div class="stage-bullet">Technical partner handles deep Q&A</div>
+          <div class="stage-days">🟢 Functional</div>
+        </div>
+      </div>
+      <div class="stage-block critical">
+        <div class="stage-header">05 · Configure &amp; Price</div>
+        <div class="stage-body">
+          <div class="stage-name">POC + pricing</div>
+          <div class="stage-friction">CRITICAL FRICTION</div>
+          <div class="stage-bullet">Same Oracle POC at every account</div>
+          <div class="stage-bullet">POC = 6–9 months average</div>
+          <div class="stage-bullet">7–10 day formal pricing cycle</div>
+          <div class="stage-bullet">3-tier worldwide discount approval</div>
+          <div class="stage-days">🔴 The POC Treadmill</div>
+        </div>
+      </div>
+      <div class="stage-block critical">
+        <div class="stage-header">06 · Close &amp; Fulfil</div>
+        <div class="stage-body">
+          <div class="stage-name">Contract to delivery</div>
+          <div class="stage-friction">CRITICAL FRICTION</div>
+          <div class="stage-bullet">FOE, DPL, credit checks — undocumented</div>
+          <div class="stage-bullet">New sellers: ask someone for every step</div>
+          <div class="stage-bullet">ISV cert chicken-and-egg</div>
+          <div class="stage-bullet">Expert Labs: 2 people, booked 2028</div>
+          <div class="stage-days">🔴 Zero Documentation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: TWO COLLAPSE POINTS -->
+  <div class="slide" id="s7">
+    <div style="position:absolute;top:0;left:0;right:0;height:5px;background:var(--ibm-red);"></div>
+    <div class="left" style="padding:6%;">
+      <div class="collapse-panel left" style="padding:0;border:none;">
+        <div class="cp-content">
+          <div class="ibm-tag red">Collapse Point 1 · Stage 1</div>
+          <h3>No Prospect<br>Intelligence</h3>
+          <div style="font-size:15px;color:var(--text-secondary);line-height:1.75;">There is no IBM tool to identify which customers are running Oracle or VMware and approaching a server refresh — the primary entry-point trigger for LinuxONE sales.</div>
+          <div class="cp-quote">"If there is a tool which can give me that insight as to what is the current stack of the customer... today if I'm targeting 5 opportunities, I'll be easily able to address 20."<br><br>— Karan Arya, India</div>
+          <div class="cp-fact">
+            <div class="fact-num">4×</div>
+            <div class="fact-label">More opportunities possible per seller<br>with basic customer stack intelligence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right" style="padding:6%;border-left:1px solid var(--border);">
+      <div class="collapse-panel" style="padding:0;border:none;">
+        <div class="cp-content">
+          <div class="ibm-tag red">Collapse Point 2 · Stage 5</div>
+          <h3>The POC Treadmill</h3>
+          <div style="font-size:15px;color:var(--text-secondary);line-height:1.75;">Nearly every LinuxONE deal requires a full POC to prove Oracle database performance — a fact the market already accepts. POCs consume 6–9 months of capacity that could be used for new accounts.</div>
+          <div class="cp-quote">"We are proving that Oracle databases work well on LinuxONE — every single client. Same chemistry experiment. Why spend time? The world already knows."</div>
+          <div class="cp-quote" style="margin-top:16px;">"Axis Bank POC: started June 2025, finished December 2025, got order March 2026. That's a 9-month engagement — but I have a 3-month window to close a deal."<br><br>— Suresh Jayanthi, India</div>
+          <div class="cp-fact">
+            <div class="fact-num">243 days</div>
+            <div class="fact-label">One ICICI Bank opportunity spent 64 days<br>in Qualify + 179 days in Design — before<br>even reaching the Propose stage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8: THE FIVE FINDINGS -->
+  <div class="slide" id="s8">
+    <div style="padding:4% 5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">Five Biggest Findings</div>
+      <div style="font-size:clamp(15px,1.7vw,23px);font-weight:300;color:var(--text-primary);margin-top:6px;">9 findings · Confirmed independently across regions</div>
+      <div class="findings-grid">
+        <div class="finding-card">
+          <div class="f-id">Finding 1</div>
+          <h4>AI has already replaced Seismic as the first stop for information</h4>
+          <p>12 of 13 sellers independently built an AI workaround — Claude, Copilot, Gemini NotebookLM, Watson Workshop. This is not a behaviour quirk. It is a clear signal: if IBM does not build its own AI-assisted enablement experience, sellers will fully migrate to consumer AI tools.</p>
+          <div class="c5-badge">12 / 13 Participants · All Regions</div>
+        </div>
+        <div class="finding-card deal-blocking">
+          <div class="f-id">Finding 2 · Deal-Blocking</div>
+          <h4>Banking-only win stories are blocking deals in pharma and utilities</h4>
+          <p>Moesha Malik (Horizon/Americas) confirmed ALL current win stories are financial/banking. Two clients — one utilities, one pharma — disengaged in the same week with the same reason: "We don't see how this fits for us because we are not in the banking industry."</p>
+          <div class="deal-badge">2 Deals Lost · Same Week · Confirmed</div>
+        </div>
+        <div class="finding-card">
+          <div class="f-id">Finding 3</div>
+          <h4>The entire sales process is undocumented</h4>
+          <p>Critical steps — ePricer approvals, Q2C, FOE submissions, DPL checks, credit checks, PO loading across 3 tiers — exist nowhere in writing. New sellers must interrupt experienced colleagues to discover each step. This is a daily cost to the most experienced people.</p>
+          <div class="c5-badge">All Regions · Universal Finding</div>
+        </div>
+        <div class="finding-card">
+          <div class="f-id">Finding 4</div>
+          <h4>Seller-created content of institutional value is trapped outside the official kit</h4>
+          <p>Matt Mondics (Americas) has hundreds of self-built presentations in a personal OneDrive — including an IT optimisation demo used informally by multiple sellers. Never entered Seismic. Karan built a Quantum Safety deck. Moesha built a "What is LinuxONE" deck. No pathway exists.</p>
+          <div class="c5-badge">3 Regions · 3 Independent Instances</div>
+        </div>
+        <div class="finding-card">
+          <div class="f-id">Finding 5</div>
+          <h4>New markets are exposing gaps the kit was never built for</h4>
+          <p><strong style="color:var(--text-primary);">Digital Assets / Haven:</strong> Jacqueline Coelho is competing against Thales with no competitive intelligence and no Africa-specific references. <strong style="color:var(--text-primary);">Horizon / White-Space:</strong> Moesha's infrastructure-unaware clients have nothing in the kit. <strong style="color:var(--text-primary);">Enterprise Briefings:</strong> No customer-facing "under the hood" technical brief exists anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: VOICE OF THE SELLER -->
+  <div class="slide" id="s9">
+    <div style="padding:5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">Voice of the Seller</div>
+      <div style="font-size:clamp(15px,1.7vw,23px);font-weight:300;color:var(--text-primary);margin-top:6px;">141 verbatim quotes captured across 13 interviews. These are their words.</div>
+      <div class="quotes-mosaic">
+        <div class="quote-tile">
+          <div class="qt-text"><span class="openquote">"</span>There is no documentation for new sellers where to start. You need to find someone who knows it and ask them... credit check, DPL, FOE — these steps are not documented anywhere."</div>
+          <div class="qt-attr"><span>Bulent Palabiyik</span> · Z &amp; LinuxONE Seller · Turkey</div>
+        </div>
+        <div class="quote-tile">
+          <div class="qt-text">"Every pretty much every day, I'll message my manager and say, hey, who's the right person to talk to about this?"</div>
+          <div class="qt-attr"><span>Matt Geran</span> · Z FSM · USA</div>
+        </div>
+        <div class="quote-tile">
+          <div class="qt-text">"We are proving that Oracle databases work well on LinuxONE — every single client. Same chemistry experiment. Why spend time? The world already knows."</div>
+          <div class="qt-attr"><span>Suresh Jayanthi</span> · Sales Leadership · India</div>
+        </div>
+        <div class="quote-tile">
+          <div class="qt-text">"We check the deck, then translate the deck, then customise and merge for each customer — so we need one extra step to translate to Japanese. This is not easy."</div>
+          <div class="qt-attr"><span>Hideomi Ezumi</span> · Product Mgmt · Japan</div>
+        </div>
+        <div class="quote-tile">
+          <div class="qt-text">"We need 20 of him. How do we skill up people to be like him so that we can do more in parallel?"</div>
+          <div class="qt-attr"><span>Matt Mondics</span> · Technical Sales · Americas · <span style="color:var(--ibm-red);">on Expert Labs capacity</span></div>
+        </div>
+        <div class="quote-tile">
+          <div class="qt-text">"It's spread across Seismic, brand teams have their own presentations on Teams... it's hard to find the information you're looking for."</div>
+          <div class="qt-attr"><span>Multiple Sellers</span> · Cross-Regional</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: REGIONAL PAIN MAP -->
+  <div class="slide" id="s10">
+    <div style="padding:4% 5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">Regional Pain Map</div>
+      <div style="font-size:clamp(15px,1.7vw,23px);font-weight:300;color:var(--text-primary);margin-top:6px;">Every geography has unique friction. Some have none of the content they need.</div>
+      <div class="regions-row">
+        <div class="region-card">
+          <div class="r-flag">🇯🇵</div>
+          <div class="r-name">Japan</div>
+          <div class="r-role">Rina Shoji · Hideomi Ezumi · Daisuke Shimizu</div>
+          <div class="r-pain">All sales materials are English-only. Every document requires a 3-step process: find → translate → customise. No Japanese localisation pipeline exists. DOAP kits need same-day delivery at announcement — but translation takes hours. Partner ISV sandbox access unavailable for evaluation.</div>
+          <div class="r-stat">6 hrs</div>
+          <div class="r-stat-label">Per document · Manual translation</div>
+        </div>
+        <div class="region-card">
+          <div class="r-flag">🇮🇳</div>
+          <div class="r-name">India</div>
+          <div class="r-role">Karan · Suresh · Nilanshu · Ashish</div>
+          <div class="r-pain">9–12 month sales cycles vs 6-month IBM targets. The POC treadmill consumes all capacity. Oracle DB consolidation scenario gaps. Video links flagged by client security. No prospect intelligence to identify VMware/Oracle accounts. 15-year veterans holding institutional memory in personal files.</div>
+          <div class="r-stat">243 days</div>
+          <div class="r-stat-label">Before reaching Propose stage (ICICI example)</div>
+        </div>
+        <div class="region-card">
+          <div class="r-flag">🇿🇦</div>
+          <div class="r-name">South Africa</div>
+          <div class="r-role">Jacqueline Coelho · Haven Specialist</div>
+          <div class="r-pain">Digital Asset Haven launched Oct 2025 — with zero supporting enablement. Active Thales bid in play with no competitive intelligence in any IBM kit. No Africa/MEA client references. Nearly all IBM LinuxONE SMEs based in Europe — support requests cross time zones and queues. Only participant who uses video effectively (podcast format).</div>
+          <div class="r-stat">0</div>
+          <div class="r-stat-label">Competitive intel for named competitor</div>
+        </div>
+        <div class="region-card">
+          <div class="r-flag">🇺🇸</div>
+          <div class="r-name">Americas</div>
+          <div class="r-role">Moesha Malik · Matt Mondics · Matt Geran</div>
+          <div class="r-pain">Horizon sellers target clients with ZERO prior IBM presence — infrastructure-unaware. Banking-only win stories caused two deal disengagements in same week. No "under the hood" enterprise brief. Shadow content library trapped in personal OneDrive. Expert Labs: 2 people nationally, booked through 2028. Emperor 5 TLLB does not exist.</div>
+          <div class="r-stat">2 people</div>
+          <div class="r-stat-label">LinuxONE implementation capacity (US)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 11: AI DISPLACEMENT -->
+  <div class="slide" id="s11">
+    <div class="left-col">
+      <div class="eyebrow">Finding 1</div>
+      <div style="font-size:clamp(18px,2.2vw,28px);font-weight:300;color:var(--text-primary);margin-top:14px;line-height:1.4;">AI is displacing Seismic as the primary knowledge source</div>
+      <div style="margin-top:32px;">
+        <div class="ai-adoption-bar">
+          <div class="ai-bar-label"><span>AI Tool Adoption</span><span style="color:var(--ibm-red);font-weight:700;">12 / 13</span></div>
+          <div class="ai-bar-track"><div class="ai-bar-fill high" style="width:92%;"></div></div>
+        </div>
+        <div class="ai-adoption-bar" style="margin-top:18px;">
+          <div class="ai-bar-label"><span>Seismic As First Stop</span><span style="color:var(--text-muted);">Declining</span></div>
+          <div class="ai-bar-track"><div class="ai-bar-fill" style="width:25%;background:var(--text-disabled);"></div></div>
+        </div>
+      </div>
+      <div style="margin-top:32px;font-size:14px;color:var(--text-secondary);line-height:1.75;border-left:3px solid var(--ibm-orange);padding-left:18px;">Every seller has independently built an AI workaround. This is not a behavioural quirk — it is a clear design requirement. The market has already voted.</div>
+    </div>
+    <div class="right-col">
+      <div class="eyebrow dim" style="margin-bottom:20px;">Shadow AI Stack — In Active Use</div>
+      <div class="ai-tools-list">
+        <div class="ai-tool"><div class="tool-dot shadow-tool"></div><div><div class="tool-name">Claude AI</div><div class="tool-note">Customer research · pitch personalisation · brand-compliant decks</div></div></div>
+        <div class="ai-tool"><div class="tool-dot shadow-tool"></div><div><div class="tool-name">Microsoft Copilot</div><div class="tool-note">Email drafting · quick lookups · 3-day onboarding crash course</div></div></div>
+        <div class="ai-tool"><div class="tool-dot shadow-tool"></div><div><div class="tool-name">Gemini NotebookLM</div><div class="tool-note">Upload Redbooks for Q&amp;A · competitive research</div></div></div>
+        <div class="ai-tool"><div class="tool-dot"></div><div><div class="tool-name">Watson Workshop</div><div class="tool-note">IBM tool — used by Jacqueline (SA) in multi-tool stack</div></div></div>
+        <div class="ai-tool"><div class="tool-dot shadow-tool"></div><div><div class="tool-name">Finlistics</div><div class="tool-note">Third-party commercial data · SA market intelligence</div></div></div>
+        <div class="ai-tool"><div class="tool-dot"></div><div><div class="tool-name">IBM Bob / Ask Aura</div><div class="tool-note">IBM official AI — limited adoption outside select users</div></div></div>
+      </div>
+      <div style="margin-top:24px;padding:22px;background:var(--red-tint-bg);border:1px solid var(--red-tint-border);">
+        <div style="font-size:14px;font-weight:700;color:var(--ibm-red);margin-bottom:10px;">The Signal</div>
+        <div style="font-size:14px;color:var(--text-secondary);line-height:1.65;">If IBM does not build its own AI-assisted enablement experience, sellers will fully migrate to consumer AI tools — with no content governance, no privacy controls, and no IBM institutional knowledge embedded.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 12: SHADOW CONTENT -->
+  <div class="slide" id="s12">
+    <div style="padding:5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">The Shadow Content Library</div>
+      <div style="font-size:clamp(15px,1.7vw,23px);font-weight:300;color:var(--text-primary);margin-top:6px;">Institutional assets of real value — trapped in personal OneDrives. No pathway to official kit.</div>
+      <div class="shadow-grid">
+        <div class="shadow-card">
+          <div class="sc-name">Matt Mondics</div>
+          <div class="sc-loc">Americas · Technical Sales · WSC Alumni</div>
+          <div class="sc-asset">Hundreds of custom presentations</div>
+          <div class="sc-desc">Maintains a personal OneDrive archive of self-built presentations accumulated over his tenure. Includes an IT optimisation demo now used informally by multiple sellers. Assembled the Morgan Stanley briefing from TLLB + IT Economics + Claude-processed Z17 TLLB in a single session. Built a custom IBM Design System prompt for Claude — produces brand-compliant presentations without AI hallmarks. Applied explicit customer data privacy guardrails in every prompt.</div>
+          <div class="sc-status">Never entered Seismic · Circulates informally</div>
+        </div>
+        <div class="shadow-card">
+          <div class="sc-name">Karan Arya</div>
+          <div class="sc-loc">India · Z Architect / Technical Sales</div>
+          <div class="sc-asset">Quantum Safety Deck</div>
+          <div class="sc-desc">Independently built a Quantum Safety positioning deck — a topic with active customer and competitor relevance. No contribution pathway to the official Sales Kit exists. The deck is not in Seismic. No peer seller can find it. No quality review has been applied. The institutional value of this work is trapped and will disappear if Karan changes roles.</div>
+          <div class="sc-status">Private · No contribution pathway</div>
+        </div>
+        <div class="shadow-card">
+          <div class="sc-name">Moesha Malik</div>
+          <div class="sc-loc">Americas · Horizon / White-Space Seller</div>
+          <div class="sc-asset">"What is LinuxONE" Starter Deck</div>
+          <div class="sc-desc">Built an entry-point deck for infrastructure-unaware clients from scratch — because nothing like it existed in the Sales Kit. Used Copilot to synthesise a complete 3-day LinuxONE crash course for her own onboarding. Her Horizon-specific "What is LinuxONE" deck now serves every new Horizon seller who finds out it exists — through informal knowledge sharing, not Seismic.</div>
+          <div class="sc-status">Shadow Onboarding Asset · Not Official</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;padding:18px 24px;background:var(--orange-tint-bg);border:1px solid var(--orange-tint-border);font-size:14px;color:var(--text-secondary);line-height:1.65;">Three independent participants · Three regions · Three roles — all converge on the same workaround: <strong style="color:var(--ibm-orange);">create privately, use privately, share informally</strong>. Institutional asset value is lost every time a seller builds privately instead of contributing to the official kit.</div>
+    </div>
+  </div>
+
+  <!-- SLIDE 13: DEAL-BLOCKING EVIDENCE -->
+  <div class="slide" id="s13">
+    <div style="padding:4% 5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">What This Costs in Deals</div>
+      <div style="font-size:clamp(15px,1.7vw,23px);font-weight:300;color:var(--text-primary);margin-top:6px;">Specific, named, deal-proximate gaps — not hypothetical problems</div>
+      <div class="evidence-table">
+        <div class="ev-row header">
+          <div class="ev-cell header-cell">Gap</div>
+          <div class="ev-cell header-cell">Evidence</div>
+          <div class="ev-cell header-cell">Severity</div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">Banking-only win stories</div>
+          <div class="ev-cell">Utilities + pharma client both disengaged same week · "We don't see how this fits for us" · Moesha Malik confirmed</div>
+          <div class="ev-cell"><div class="severity-badge critical">Deal-Blocking</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">No Thales competitive intel</div>
+          <div class="ev-cell">Active bid in South Africa · Bid lost · No IBM competitive response in any kit · Jacqueline Coelho confirmed</div>
+          <div class="ev-cell"><div class="severity-badge critical">Bid Lost</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">No Emperor 5 TLLB</div>
+          <div class="ev-cell">Matt Mondics manually stripped ZOS content from Z17 TLLB for a Morgan Stanley top-to-top meeting · No official asset existed</div>
+          <div class="ev-cell"><div class="severity-badge high">Workaround</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">ISV certification lag</div>
+          <div class="ev-cell">NCDX deal: Confluent not certified for LinuxONE · Required worldwide escalation · Only resolved because active opportunity shown · Karan confirmed</div>
+          <div class="ev-cell"><div class="severity-badge high">Deal Stall</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">9-month POC vs 3-month close window</div>
+          <div class="ev-cell">Axis Bank: POC started June 2025 → finished Dec 2025 → order March 2026 · Structural cycle misalignment · Suresh + Nilanshu independently confirmed</div>
+          <div class="ev-cell"><div class="severity-badge critical">Structural</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">IDAH documentation incomplete</div>
+          <div class="ev-cell">Content team escalation received — API details missing · Deal could not progress to close · Official escalation on record</div>
+          <div class="ev-cell"><div class="severity-badge high">Deal Blocked</div></div>
+        </div>
+        <div class="ev-row">
+          <div class="ev-cell gap">Expert Labs capacity bottleneck</div>
+          <div class="ev-cell">2 people nationally in the US who can implement LinuxONE · Both booked through 2028 on hourly basis · Post-close deals stalling · Matt Mondics confirmed</div>
+          <div class="ev-cell"><div class="severity-badge critical">Execution Ceiling</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 14: RECOMMENDATIONS -->
+  <div class="slide" id="s14">
+    <div style="padding:4% 5%;display:flex;flex-direction:column;height:100%;">
+      <div class="eyebrow">30 Prioritised Recommendations</div>
+      <div style="font-size:clamp(14px,1.5vw,21px);font-weight:300;color:var(--text-primary);margin-top:6px;">Tiered by impact and effort — from this week to this quarter</div>
+      <div class="rec-tiers">
+        <div class="rec-tier">
+          <div class="rec-tier-header quick">⚡ Quick Wins</div>
+          <div class="rec-item urgent">Expand win stories beyond banking — pharma, utilities, healthcare (Deal-Blocking)</div>
+          <div class="rec-item urgent">Publish seller onboarding process guide — ends daily tax on experienced sellers</div>
+          <div class="rec-item">Build Haven / Thales competitive intelligence brief</div>
+          <div class="rec-item">Create "What is LinuxONE" starter kit for non-infrastructure audiences</div>
+          <div class="rec-item">Add content-update notifications to Seismic</div>
+          <div class="rec-item">Build "Sales Kit of Sales Kits" Seismic index page</div>
+          <div class="rec-item">Add "New" content freshness badges in-page</div>
+          <div class="rec-item">Extend Slack channel awareness to Africa/MEA sellers</div>
+          <div class="rec-item">Create SME / people directory in Sales Kit</div>
+          <div class="rec-item">Create Z vs LinuxONE disambiguation content (internal + external)</div>
+        </div>
+        <div class="rec-tier">
+          <div class="rec-tier-header value">🎯 High Value</div>
+          <div class="rec-item">AI-powered semantic search for Seismic / Sales Kit</div>
+          <div class="rec-item">Workload-specific competitive playbooks (VMware, Oracle/DB2, Confluent, Thales/Haven)</div>
+          <div class="rec-item">Customer-facing "under the hood" technical architecture brief</div>
+          <div class="rec-item">Seller-to-official-kit content contribution pathway</div>
+          <div class="rec-item">Digital Asset Haven enablement bundle</div>
+          <div class="rec-item">Win story / deal knowledge sharing channel</div>
+          <div class="rec-item">Quick competitive comparison tool (Z/LinuxONE vs x86/Exadata)</div>
+          <div class="rec-item">Multi-database use case content pack (Oracle, DB2, PostgreSQL)</div>
+          <div class="rec-item">Audit and expand YourLearnings LinuxONE content parity</div>
+          <div class="rec-item">IBM-endorsed multi-tool integration guide (OpenShift + Terraform + Ansible)</div>
+        </div>
+        <div class="rec-tier">
+          <div class="rec-tier-header easy">🔧 Easy Improvements</div>
+          <div class="rec-item">Capability-to-business-outcome linkage table</div>
+          <div class="rec-item">Sales Kit content filter / topic-level search bar</div>
+          <div class="rec-item">IBM software compatibility reference in Sales Kit</div>
+          <div class="rec-item">Seller-editable collaborative FAQ / knowledge section</div>
+          <div class="rec-item">Curated client reference library with permission tiers</div>
+          <div class="rec-item">SME video explainers for Haven and complex new products</div>
+          <div style="flex:1;"></div>
+        </div>
+        <div class="rec-tier">
+          <div class="rec-tier-header strategic">🏗 Strategic</div>
+          <div class="rec-item urgent">Address Expert Labs LinuxONE capacity bottleneck — requires leadership skilling programme</div>
+          <div class="rec-item">Structured localisation pipeline — Japan, France, Turkey</div>
+          <div class="rec-item">Distinct Z vs LinuxONE enablement tracks</div>
+          <div class="rec-item">Expand Tech Zone hardware-level access (HMC, LPAR, partition weights)</div>
+          <div style="flex:1;"></div>
+          <div style="padding:18px;background:var(--purple-tint-bg);border:1px solid var(--purple-tint-border);font-size:13px;color:var(--text-secondary);line-height:1.65;margin-top:8px;"><strong style="color:var(--ibm-purple);">Cathedral vs Bazaar</strong><br>IBM Z needs cathedral: authoritative, deep. LinuxONE needs bazaar: social proof, peer benchmarks, crowd signals. One kit cannot serve both.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 15: NORTH STAR -->
+  <div class="slide" id="s15">
+    <div class="eyebrow">Design North Star</div>
+    <p class="starq">Find the right content. Know what to say. Know what to do next.</p>
+    <div class="threes">
+      <div class="three"><h4>Can't find it</h4><p>One hub, AI-assisted search, a notification when anything changes.</p><div class="m">Return visits · time-to-find</div></div>
+      <div class="three"><h4>Don't know what's next</h4><p>The onboarding playbook nobody has written down.</p><div class="m">Time-to-first-deal</div></div>
+      <div class="three"><h4>Can't show the value</h4><p>A capability-to-outcome navigator, by industry and persona.</p><div class="m">Stage progression</div></div>
+    </div>
+    <div class="demand">
+      <div class="tiny">We already do this work — as one-off requests, Apr–Jul 2026</div>
+      <div class="dnums">
+        <div><b>20</b><span>requests</span></div>
+        <div><b>14</b><span>requesters</span></div>
+        <div><b>10</b><span>portfolios</span></div>
+        <div><b>1–60+</b><span>hours each</span></div>
+      </div>
+      <div class="mix" role="img" aria-label="9 demo videos, 3 brand and page assets, 2 reviews, 1 one-pager set, 1 presentation">
+        <i style="width:56%;background:#0043ce"></i>
+        <i style="width:19%;background:#0f62fe"></i>
+        <i style="width:12%;background:#4589ff"></i>
+        <i style="width:6.5%;background:#78a9ff"></i>
+        <i style="width:6.5%;background:#d0e2ff"></i>
+      </div>
+      <div class="mixkey">
+        <span><em style="background:#0043ce"></em>Demo videos 9</span>
+        <span><em style="background:#0f62fe"></em>Brand &amp; pages 3</span>
+        <span><em style="background:#4589ff"></em>Reviews 2</span>
+        <span><em style="background:#78a9ff"></em>One-pagers 1</span>
+        <span><em style="background:#d0e2ff"></em>Presentations 1</span>
+      </div>
+      <p class="point">One repeating ask, answered retail. <em>Run as a system, it's a design programme.</em></p>
+      <div class="disc">
+        <button id="s15LogBtn" aria-expanded="false">
+          <span>View the request log</span>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12l1.4-1.4L16 19.2l8.6-8.6L26 12z"/></svg>
+        </button>
+        <div class="disc__body" id="s15LogBody">
+          <div class="chips" id="s15Chips"></div>
+          <div class="logwrap">
+            <table class="log">
+              <thead><tr><th>Product</th><th>Deliverable</th><th>Requester &amp; timing</th><th>Effort</th><th>Outcome asked for</th></tr></thead>
+              <tbody id="s15LogRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 16: THE ASK -->
+  <div class="slide" id="s16">
+    <div class="eyebrow">The Ask</div>
+    <h2 class="s16-heading">Give design and content a standing role.</h2>
+    <svg class="s16-branch" id="s16branch" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="s16-asks">
+      <div class="s16-askc"><div class="n">01</div><h4>Mandate</h4><p>We help build the enablement system, not one-off requests.</p></div>
+      <div class="s16-askc"><div class="n">02</div><h4>Capacity</h4><p>A funded pod to ship tier one in four weeks.</p></div>
+      <div class="s16-askc"><div class="n">03</div><h4>One front door</h4><p>Triage replaces ad hoc intake.</p></div>
+      <div class="s16-askc"><div class="n">04</div><h4>Access</h4><p>A seat with GTM and a workshop with 6–8 sellers.</p></div>
+    </div>
+    <div class="s16-worktabs" role="tablist" id="s16wtabs">
+      <button class="s16-wt" role="tab" aria-selected="true" data-p="0">Now, under 4 weeks<span class="n">6</span></button>
+      <button class="s16-wt" role="tab" aria-selected="false" data-p="1">Next quarter<span class="n">5</span></button>
+      <button class="s16-wt" role="tab" aria-selected="false" data-p="2">Structural<span class="n">4</span></button>
+    </div>
+    <div class="s16-wp open" data-p="0" id="s16w0"></div>
+    <div class="s16-wp" data-p="1" id="s16w1"></div>
+    <div class="s16-wp" data-p="2" id="s16w2"></div>
+  </div>
+
+</div><!-- end stage -->
+
+<div id="chrome-bottom"></div>
+
+<script>
+(function(){
+  /* ── Slide 15: request log + chips ── */
+  var LOG=[
+    ["video","MLz","3–4 min demo video","Purvi Patel · Jun 2026","20 h","Business value of MLz &amp; z17 for loan credit-risk AI"],
+    ["video","MLz","1–2 min video","Joy Deng, Roy Duke · Jul 2026","~23 h","Help sellers understand the business value"],
+    ["video","MLz","3–4 min demo video","Purvi Patel · May 2026","~12 h","Insurance claims AI, multiple models and agents"],
+    ["video","AICI","Demo / marketing video","Anastasiia Didkovska · Jun 2026","~20 h","Value and usability of the use case"],
+    ["paper","AICI","Three one-pagers + consolidated PDF","Anastasiia Didkovska · Jun 2026","~6 h","A takeaway clients keep"],
+    ["deck","Gravity + Polaris","Demo and presentation","Latasha Smith · Jun 2026 · NYSE launch","60+ h","Sell C-suite on the IM/Polaris stack"],
+    ["video","LinuxONE","Energy consumption demo","Latasha Smith · Jul 2026","—","x86 vs LinuxONE, same workload"],
+    ["brand","LinuxONE","Pictograms, imagery, stack diagrams","Kate Terraccino · ongoing","Ongoing","A recognisable product identity"],
+    ["brand","Gravity / IM","ibm.com page structure and copy","Latasha Smith · ongoing","10–12 h","Public product information"],
+    ["video","RDAC","Demo video","Shweta Singh · May 2026","36 h","Internal sales enablement"],
+    ["video","Confidential Computing","Demo video","Savita Kumari, Abhijit Mane · May 2026","20 h","Internal sales enablement"],
+    ["video","UKO","Demo video, Office 365 data","Soren Larson, Arun C R · May 2026","16 h","Enablement and client meetings"],
+    ["video","Capacity on Demand","Dashboard demo video","Leon Manten + 3iab · May 2026","20–30 h","Faster client decisions, new orders"],
+    ["review","Digital Asset Haven","Content analysis + seller survey","Johannes Kaske, Jeanette Bender · Jul 2026","~5 h","Help sellers understand Haven's value"],
+    ["review","Gravity / IM","Exec summary and script reviews","Latasha Smith · Jul 2026","1 h each","Support the GTM team"],
+    ["brand","Gravity / IM","App icon, no stated product need","Latasha Smith · Apr 2026","5 h","Purpose not recorded"]
+  ];
+  var rows = document.getElementById('s15LogRows');
+  LOG.forEach(function(d){
+    var tr = document.createElement('tr'); tr.setAttribute('data-t', d[0]);
+    tr.innerHTML = '<td>'+d[1]+'</td><td>'+d[2]+'</td><td>'+d[3]+'</td><td style="font-family:\'IBM Plex Mono\',monospace">'+d[4]+'</td><td>'+d[5]+'</td>';
+    rows.appendChild(tr);
+  });
+  var FILTERS = [["all","All"],["video","Videos"],["paper","One-pagers"],["deck","Presentations"],["brand","Brand"],["review","Reviews"]];
+  var chips = document.getElementById('s15Chips');
+  FILTERS.forEach(function(f, i){
+    var n = f[0]==='all' ? LOG.length : LOG.filter(function(d){return d[0]===f[0]}).length;
+    var b = document.createElement('button');
+    b.className = 'chip'; b.setAttribute('aria-selected', i===0 ? 'true' : 'false');
+    b.innerHTML = f[1]+'<span class="n">'+n+'</span>';
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(chips.children, function(c){ c.setAttribute('aria-selected','false'); });
+      b.setAttribute('aria-selected','true');
+      Array.prototype.forEach.call(rows.children, function(tr){
+        tr.classList.toggle('hide', f[0]!=='all' && tr.getAttribute('data-t')!==f[0]);
+      });
+    });
+    chips.appendChild(b);
+  });
+  var lb = document.getElementById('s15LogBtn');
+  lb.addEventListener('click', function(){
+    var o = lb.getAttribute('aria-expanded')==='true';
+    lb.setAttribute('aria-expanded', o ? 'false' : 'true');
+    document.getElementById('s15LogBody').classList.toggle('open', !o);
+    lb.querySelector('span').textContent = o ? 'View the request log' : 'Hide the request log';
+  });
+})();
+
+/* ── Slide 16: branch + work tabs ── */
+(function(){
+  var svg = document.getElementById('s16branch');
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  var ORX=500,ORY=8,paths=[];
+  svg.appendChild(el('circle',{class:'node',cx:ORX,cy:ORY,r:3.5}));
+  [125,375,625,875].forEach(function(x,i){
+    var d='M'+ORX+','+(ORY+4)+' C'+ORX+',40 '+x+',34 '+x+',66';
+    var w=el('path',{class:'wire',d:d});
+    w.style.animationDelay=(0.25+i*0.09)+'s';
+    svg.appendChild(w);paths.push(w);
+  });
+  var pulses=[];
+  for(var j=0;j<4;j++){
+    var c=el('circle',{class:'pulse',r:2.2});svg.appendChild(c);
+    pulses.push({c:c,p:paths[j],t:j*0.25});
+  }
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce)(function tick(){
+    pulses.forEach(function(pl){
+      pl.t+=0.006;if(pl.t>1)pl.t=0;
+      var pt=pl.p.getPointAtLength(pl.t*pl.p.getTotalLength());
+      pl.c.setAttribute('cx',pt.x);pl.c.setAttribute('cy',pt.y);
+    });
+    requestAnimationFrame(tick);
+  })();
+
+  var WORK=[
+    [["Win stories beyond banking","Two clients lost in one week. The most deal-proximate gap we found.",1],
+     ["Seller onboarding playbook","Ends the daily interruption tax on experienced sellers.",0],
+     ["Content-update notifications","Near-zero cost. Ends the stale-deck problem.",0],
+     ["\u201cWhat is LinuxONE\u201d starter kit","Horizon sellers are building their own today.",0],
+     ["Haven / Thales competitive brief","Named competitor, named lost bid, nothing in the kit.",0],
+     ["A single index of the kits","Broken links and orphaned content are systemic.",0]],
+    [["AI-assisted search","Meet sellers where they already are.",0],
+     ["Workload competitive playbooks","VMware, Oracle/Db2, Confluent, Quantum Safety, Thales.",0],
+     ["\u201cUnder the hood\u201d client brief","The format gap blocking top-to-top meetings.",0],
+     ["Seller content pathway","Capture the shadow libraries before people move on.",0],
+     ["Digital Asset Haven bundle","Live in market with no supporting kit.",0]],
+    [["Expert Labs capacity","Two implementers nationally. A ceiling on execution, not a content gap.",1],
+     ["Localisation pipeline","Six hours per document by hand does not scale.",0],
+     ["Split Z and LinuxONE tracks","One kit cannot serve both architectures.",0],
+     ["Hardware-level Tech Zone access","The differentiators we can\u2019t currently demonstrate.",0]]
+  ];
+  WORK.forEach(function(list,p){
+    var container=document.getElementById('s16w'+p);
+    list.forEach(function(w){
+      var d=document.createElement('div');
+      d.className='s16-witem'+(w[2]?' urgent':'');
+      d.innerHTML=(w[2]?'<span class="flag">Urgent</span>':'')+'<h5>'+w[0]+'</h5><p>'+w[1]+'</p>';
+      container.appendChild(d);
+    });
+  });
+  var wt=document.querySelectorAll('#s16wtabs .s16-wt');
+  Array.prototype.forEach.call(wt,function(t){
+    t.addEventListener('click',function(){
+      Array.prototype.forEach.call(wt,function(x){x.setAttribute('aria-selected','false');});
+      t.setAttribute('aria-selected','true');
+      Array.prototype.forEach.call(document.querySelectorAll('.s16-wp'),function(p){
+        p.classList.toggle('open',p.dataset.p===t.dataset.p);
+      });
+    });
+  });
+})();
+
+(function(){
+  var slides = document.querySelectorAll('.slide');
+  var total = slides.length;
+  var current = 0;
+
+  var prevBtn = document.getElementById('prev-btn');
+  var nextBtn = document.getElementById('next-btn');
+  var counter = document.getElementById('slide-counter');
+  var track   = document.getElementById('chrome-bottom');
+
+  // Build progress dots
+  for (var i = 0; i < total; i++) {
+    var dot = document.createElement('div');
+    dot.className = 'prog-dot' + (i === 0 ? ' active' : '');
+    dot.dataset.idx = i;
+    dot.addEventListener('click', (function(idx){ return function(){ goTo(idx); }; })(i));
+    track.appendChild(dot);
+  }
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    track.children[current].classList.remove('active');
+    current = Math.max(0, Math.min(total - 1, idx));
+    slides[current].classList.add('active');
+    track.children[current].classList.add('active');
+    counter.textContent = (current + 1) + ' / ' + total;
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+  }
+
+  prevBtn.addEventListener('click', function(){ goTo(current - 1); });
+  nextBtn.addEventListener('click', function(){ goTo(current + 1); });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(current + 1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   goTo(current - 1);
+  });
+
+  // Theme toggle
+  document.getElementById('theme-toggle').addEventListener('click', function(){
+    var html  = document.documentElement;
+    var isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    this.textContent = isDark ? '☾ Dark' : '☀ Light';
+  });
+})();
+</script>
+</body>
+</html>
