@@ -1,54 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IBM Z &amp; LinuxONE Seller Enablement</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
-      background: #f4f4f4;
-      color: #161616;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-    }
-    .container { max-width: 640px; width: 100%; }
-    .badge { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #6f6f6f; margin-bottom: 0.75rem; }
-    h1 { font-size: 1.75rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 0.95rem; color: #525252; margin-bottom: 2.5rem; line-height: 1.5; }
-    .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    @media (max-width: 480px) { .card-grid { grid-template-columns: 1fr; } }
-    .card { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; padding: 1.5rem; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s, box-shadow 0.15s; }
-    .card:hover { border-color: #0f62fe; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .card-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0f62fe; margin-bottom: 0.5rem; }
-    .card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; line-height: 1.4; }
-    .card p { font-size: 0.85rem; color: #525252; line-height: 1.5; }
-    .footer { margin-top: 3rem; font-size: 0.75rem; color: #8d8d8d; text-align: center; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <p class="badge">IBM Z &amp; LinuxONE &middot; GTM Seller Enablement</p>
-    <h1>Seller Enablement Presentations</h1>
-    <p class="subtitle">Select a presentation below to open it in your browser.</p>
-    <div class="card-grid">
-      <a class="card" href="seller-enablement-presentation.html">
-        <p class="card-label">Full Study</p>
-        <h2>IBM Z &amp; LinuxONE Seller Enablement</h2>
-        <p>Comprehensive enablement covering portfolio, value propositions, competitive positioning, and sales plays.</p>
-      </a>
-      <a class="card" href="seller-enablement-pitch-10min-presentation.html">
-        <p class="card-label">10-Minute Pitch</p>
-        <h2>GTM Seller Pitch Deck</h2>
-        <p>Concise 10-minute leadership pitch on IBM Z &amp; LinuxONE GTM strategy and seller readiness.</p>
-      </a>
-    </div>
-    <p class="footer">IBM Confidential &mdash; GTM Seller Enablement Study</p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seller enablement, by design · IBM Z &amp; LinuxONE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Carbon tokens — g100 default, g10 toggle (same set as the decks) ===== */
+:root,[data-theme="g100"]{
+  --bg:#161616; --layer:#262626; --border:#393939; --border-strong:#6f6f6f;
+  --text:#f4f4f4; --text-2:#c6c6c6; --text-3:#8d8d8d;
+  --blue:#4589ff; --focus:#ffffff;
+}
+[data-theme="g10"]{
+  --bg:#f4f4f4; --layer:#ffffff; --border:#e0e0e0; --border-strong:#8d8d8d;
+  --text:#161616; --text-2:#525252; --text-3:#6f6f6f;
+  --blue:#0f62fe; --focus:#0f62fe;
+}
+:root{
+  --ease:cubic-bezier(.2,0,.38,.9);
+  --ease-out:cubic-bezier(0,0,.3,1);
+  --pad:clamp(20px,5vw,80px);
+  --header-h:48px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  transition:background .24s var(--ease),color .24s var(--ease);
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* ===== header ===== */
+.shell{
+  position:fixed;inset:0 0 auto 0;height:var(--header-h);z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(8px,2vw,20px) 0 clamp(16px,3vw,24px);
+  background:var(--bg);border-bottom:1px solid var(--border);
+}
+.brand{font-size:14px;letter-spacing:.16px;color:var(--text-2)}
+.brand b{font-weight:600;color:var(--text)}
+.themeBtn{
+  display:flex;align-items:center;gap:8px;height:var(--header-h);padding:0 12px;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.32px;color:var(--text-3);
+  transition:background .11s var(--ease),color .11s var(--ease);
+}
+.themeBtn:hover{background:var(--layer);color:var(--text)}
+.themeBtn i{width:10px;height:10px;border:1px solid var(--border-strong);border-radius:50%;
+  background:linear-gradient(90deg,var(--text) 50%,transparent 50%)}
+
+/* ===== page: one screen ===== */
+.wrap{
+  min-height:100vh;max-width:1040px;margin:0 auto;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:calc(var(--header-h) + clamp(24px,4vh,44px)) var(--pad) clamp(20px,3.5vh,36px);
+}
+
+.eyebrow{
+  display:flex;align-items:center;gap:12px;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.32px;
+  text-transform:uppercase;color:var(--text-3);margin-bottom:clamp(14px,2.4vh,22px);
+}
+.eyebrow .bars{display:flex;flex-direction:column;gap:2px}
+.eyebrow .bars i{display:block;width:18px;height:2px;background:var(--blue)}
+
+h1{
+  font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:200;line-height:1.06;
+  letter-spacing:-.03em;
+}
+h1 b{font-weight:600}
+.lede{
+  margin-top:clamp(12px,1.8vh,18px);max-width:52ch;
+  font-size:clamp(.95rem,1.25vw,1.075rem);font-weight:300;color:var(--text-2);
+}
+
+/* ===== shared tile mechanics ===== */
+.tile{position:relative;background:var(--bg);transition:background .24s var(--ease)}
+.tile::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--blue);
+  transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease-out);
+}
+.tile:hover,.tile:focus-visible{background:var(--layer)}
+.tile:hover::before,.tile:focus-visible::before{transform:scaleY(1)}
+.arw{flex:none;transition:transform .24s var(--ease)}
+.arw path{fill:var(--blue)}
+.tile:hover .arw,.tile:focus-visible .arw{transform:translateX(6px)}
+.kicker{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.32px;
+  text-transform:uppercase;color:var(--blue);
+}
+.kicker span{color:var(--text-3)}
+
+/* ===== primary: the 10-minute pitch ===== */
+.primary{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+  margin-top:clamp(24px,4vh,44px);
+  padding:clamp(22px,2.8vh,34px) clamp(22px,2.6vw,34px);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.primary::before{transform:scaleY(1);width:3px}
+.primary h2{
+  margin-top:10px;
+  font-size:clamp(1.5rem,3vw,2.35rem);font-weight:200;line-height:1.12;letter-spacing:-.02em;
+}
+.primary .go{display:flex;align-items:center;gap:10px;font-size:.9375rem;white-space:nowrap}
+@media (max-width:600px){
+  .primary{flex-direction:column;align-items:flex-start;gap:18px}
+}
+
+/* ===== secondary: three compact rows ===== */
+.more{
+  display:grid;gap:1px;background:var(--border);
+  margin-top:clamp(20px,3vh,32px);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.row{
+  display:flex;align-items:center;gap:clamp(12px,2vw,28px);
+  padding:clamp(13px,1.8vh,18px) clamp(22px,2.6vw,34px);
+}
+.row .kicker{flex:none;width:clamp(96px,13vw,140px)}
+.row h3{flex:1;font-size:.9375rem;font-weight:400;letter-spacing:.005em}
+.row .meta{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.32px;color:var(--text-3);
+}
+@media (max-width:640px){
+  .row{flex-wrap:wrap;gap:6px 14px}
+  .row .kicker{width:auto}
+  .row h3{flex:1 1 100%;order:3}
+}
+
+.foot{
+  margin-top:clamp(18px,3vh,30px);
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.32px;color:var(--text-3);
+}
+
+/* ===== load sequence ===== */
+.rv{opacity:0;transform:translateY(10px);animation:rv .6s var(--ease-out) forwards}
+.d1{animation-delay:.06s}.d2{animation-delay:.14s}.d3{animation-delay:.22s}
+.d4{animation-delay:.3s}.d5{animation-delay:.38s}
+@keyframes rv{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .rv{animation:none;opacity:1;transform:none}
+  *{transition-duration:.01ms !important}
+  .tile::before{transform:scaleY(1)}
+}
+</style>
+
+<header class="shell">
+  <div class="brand">IBM Z &amp; LinuxONE · <b>Seller enablement</b></div>
+  <button class="themeBtn" id="themeBtn" aria-label="Switch theme">
+    <i></i><span id="themeLabel">Gray 10</span>
+  </button>
+</header>
+
+<main class="wrap">
+  <div class="eyebrow rv">
+    <span class="bars"><i></i><i></i><i></i></span>
+    Seller enablement study · <b>IBM Z &amp; LinuxONE</b> · 2026
   </div>
-</body>
-</html>
+
+  <h1 class="rv d1">Seller enablement, <b>by design</b></h1>
+  <p class="lede rv d2">Where sellers stall today, and how AI closes the gap. Start with the
+    ten-minute pitch — the evidence sits underneath it.</p>
+
+  <a class="tile primary rv d3" href="seller-enablement-pitch-10min-presentation.html">
+    <div>
+      <div class="kicker">Start here <span>· 10 minutes</span></div>
+      <h2>GTM strategy and seller readiness</h2>
+    </div>
+    <span class="go">Open the pitch
+      <svg class="arw" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.5 3.5 7.8 4.2 11.1 7.5H2v1h9.1L7.8 11.8l.7.7L13 8z"/></svg>
+    </span>
+  </a>
+
+  <div class="more rv d4">
+    <a class="tile row" href="seller-enablement-presentation.html">
+      <span class="kicker">Full study</span>
+      <h3>IBM Z &amp; LinuxONE seller enablement</h3>
+      <span class="meta">Self-paced</span>
+      <svg class="arw" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.5 3.5 7.8 4.2 11.1 7.5H2v1h9.1L7.8 11.8l.7.7L13 8z"/></svg>
+    </a>
+
+    <a class="tile row" href="https://pages.github.ibm.com/vivekgopinath/connect-and-enable-report/build/index.html#/summary" target="_blank" rel="noopener">
+      <span class="kicker">Research report</span>
+      <h3>Connect &amp; Enable: research synthesis</h3>
+      <span class="meta">New tab</span>
+      <svg class="arw" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 2v1h2.3L7.6 7.7l.7.7L13 3.7V6h1V2zM12 13H4V5h4V4H3v10h10V9h-1z"/></svg>
+    </a>
+
+    <a class="tile row" href="https://app.mural.co/t/ibm14/m/ibm14/1786592009673/c8a4aff9c9076ceb2e588c20c3d94c08a12964e4" target="_blank" rel="noopener">
+      <span class="kicker">Synthesis board</span>
+      <h3>How we got from notes to findings</h3>
+      <span class="meta">Mural</span>
+      <svg class="arw" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 2v1h2.3L7.6 7.7l.7.7L13 3.7V6h1V2zM12 13H4V5h4V4H3v10h10V9h-1z"/></svg>
+    </a>
+  </div>
+
+  <p class="foot rv d5">IBM Confidential · GTM seller enablement study</p>
+</main>
+
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn'),lbl=document.getElementById('themeLabel'),r=document.documentElement;
+  r.setAttribute('data-theme','g100');
+  btn.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')!=='g10';
+    r.setAttribute('data-theme',dark?'g10':'g100');
+    lbl.textContent=dark?'Gray 100':'Gray 10';
+  });
+})();
+</script>
